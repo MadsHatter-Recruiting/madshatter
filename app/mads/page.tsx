@@ -106,6 +106,24 @@ export default function MadsPage() {
                 </p>
               </div>
             </div>
+
+            <div>
+              <h2 className="text-lg font-semibold text-slate-900">About Mads</h2>
+              <div className="mt-2 space-y-4">
+                <p>
+                  Madeline (Mads) Rodriguez has spent her career inside high-growth companies helping teams scale and
+                  making hiring decisions across roles ranging from entry-level talent to executive leadership.
+                </p>
+                <p>
+                  Her experience spans companies including OpenAI, Sui, Polygon, Robinhood, DoorDash, and Yelp.
+                </p>
+                <p>
+                  Over the years she&apos;s participated in thousands of resume reviews, interviews, and hiring
+                  debriefs — the conversations where final decisions are made.
+                </p>
+                <p>The Mads Hatter is her way of sharing some of that perspective more broadly.</p>
+              </div>
+            </div>
           </div>
           <div className="mt-8 flex flex-wrap gap-3">
             <a
