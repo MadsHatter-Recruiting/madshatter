@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Mads Hatter | AI Resume Reviewer",
-  description: "Get your resume reviewed like a top recruiter would.",
+  title: "MadsHatter",
+  description: "MadsHatter",
   icons: {
     icon: "/mads-hatter-mark.svg",
     shortcut: "/mads-hatter-mark.svg",
