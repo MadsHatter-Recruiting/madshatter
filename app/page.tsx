@@ -49,6 +49,7 @@ const BulletList = ({ items }: { items: string[] }) => (
 
 export default function HomePage() {
   const [file, setFile] = useState<File | null>(null);
+  const [resumeText, setResumeText] = useState("");
   const [jobDescription, setJobDescription] = useState("");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
@@ -61,15 +62,18 @@ export default function HomePage() {
     setError("");
     setResult(null);
 
-    if (!file) {
-      setError("Please upload a PDF resume.");
+    if (!file && !resumeText.trim()) {
+      setError("Please upload a PDF resume or paste resume text.");
       return;
     }
 
     try {
       setLoading(true);
       const formData = new FormData();
-      formData.append("file", file);
+      if (file) {
+        formData.append("file", file);
+      }
+      formData.append("resumeText", resumeText);
       formData.append("jobDescription", jobDescription);
 
       const response = await fetch("/api/review", {
@@ -229,7 +233,20 @@ export default function HomePage() {
                 accept="application/pdf"
                 onChange={(event) => setFile(event.target.files?.[0] ?? null)}
                 className="block w-full rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm text-slate-700 file:mr-3 file:rounded-md file:border-0 file:bg-slate-100 file:px-3 file:py-2 file:text-sm file:font-medium file:text-slate-700"
-                required
+              />
+            </div>
+
+            <div>
+              <label htmlFor="resumeText" className="mb-2 block text-sm font-medium text-slate-700">
+                Paste Resume Text (optional)
+              </label>
+              <textarea
+                id="resumeText"
+                value={resumeText}
+                onChange={(event) => setResumeText(event.target.value)}
+                rows={8}
+                placeholder="Paste your resume text here if you prefer not to upload a PDF..."
+                className="block w-full rounded-lg border border-slate-300 px-3 py-2 text-sm leading-6 text-slate-700 placeholder:text-slate-400 focus:border-sky-500 focus:outline-none"
               />
             </div>
 
