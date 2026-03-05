@@ -2,6 +2,7 @@
 
 import { FormEvent, useMemo, useState } from "react";
 import { isTargetedReview, ReviewResponse } from "@/lib/types";
+import LogoTicker from "@/components/LogoTicker";
 
 const LINKEDIN_URL = "https://www.linkedin.com/in/madelinerodz/";
 const CALENDLY_URL = "https://calendly.com/madshatter/30min";
@@ -188,11 +189,7 @@ export default function HomePage() {
           </div>
         </section>
 
-        <section className="mt-4 rounded-xl bg-white px-5 py-3 shadow-sm ring-1 ring-slate-200 sm:px-6">
-          <p className="overflow-x-auto whitespace-nowrap text-center text-xs font-medium tracking-wide text-slate-500 sm:text-sm">
-            Companies I&apos;ve hired for: Sui • Polygon • Robinhood • DoorDash • Yelp • OpenAI
-          </p>
-        </section>
+        <LogoTicker />
 
         <section className="mt-6 rounded-2xl bg-white p-8 shadow-sm ring-1 ring-slate-200 sm:p-10">
           <SectionTitle>What you can use this for</SectionTitle>

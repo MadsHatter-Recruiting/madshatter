@@ -13,3 +13,34 @@ body {
 .section-shell {
   @apply mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8;
 }
+
+@keyframes ticker-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.ticker-scroll {
+  animation: ticker-scroll 28s linear infinite;
+  will-change: transform;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .ticker-wrap:hover .ticker-scroll {
+    animation-play-state: paused;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ticker-scroll {
+    animation: none;
+    transform: none;
+  }
+
+  .ticker-duplicate {
+    display: none;
+  }
+}
