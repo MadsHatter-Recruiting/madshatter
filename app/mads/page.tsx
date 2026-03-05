@@ -75,72 +75,37 @@ export default function MadsPage() {
             </div>
           </div>
           <div className="mt-6 max-w-4xl space-y-7 text-base leading-7 text-slate-700">
-            <div>
-              <h2 className="text-lg font-semibold text-slate-900">What She Does</h2>
-              <p className="mt-2">
-                Mads helps candidates position their experience so hiring managers see clear signal fast. She built
-                Mads Hatter to mirror how real recruiting decisions are made under time pressure, not how resumes are
-                graded in theory.
+            <div className="space-y-4">
+              <p className="text-xl font-semibold leading-8 text-slate-900">See hiring the way insiders do.</p>
+              <p>Most candidates never get a clear look at how hiring decisions are actually made.</p>
+              <p>The Mads Hatter was built to change that.</p>
+              <p>
+                This tool reviews your resume through the same lens recruiters and hiring managers use every day
+                helping you understand what stands out, what might raise questions, and how to strengthen your story
+                before you enter the process.
               </p>
+              <p className="font-medium text-slate-900">Built from real hiring environments, not resume theory.</p>
             </div>
 
             <div>
-              <h2 className="text-lg font-semibold text-slate-900">Why She Built This</h2>
+              <h2 className="text-lg font-semibold text-slate-900">Why This Exists</h2>
               <div className="mt-2 space-y-4">
                 <p>
-                  Mads Rodriguez is a talent leader who has built and scaled recruiting functions inside high-growth
-                  tech companies including Sui Foundation, Polygon, Robinhood, DoorDash, and Yelp.
+                  After years working inside hiring teams, one thing became clear: many talented people are navigating
+                  the job search without visibility into how decisions are actually made.
+                </p>
+                <p>The Mads Hatter was built to offer that perspective.</p>
+                <p>
+                  It brings together patterns from real hiring environments from early-career roles to executive
+                  searches to help candidates better understand how their experience is likely to be interpreted
+                  inside the room.
                 </p>
                 <p>
-                  Over the years, she has reviewed thousands of resumes, run hundreds of interviews, and sat in
-                  hiring debriefs where final decisions actually get made. Most candidates never get visibility into
-                  those conversations.
-                </p>
-                <p>
-                  She built this tool to give people a real view into how hiring decisions happen, from C-suite roles
-                  to entry-level roles, and to make that playbook accessible to everyone.
-                </p>
-                <p>
-                  She built this platform to bring greater transparency to offer negotiations and to help ensure
-                  professionals are equipped to advocate for compensation that reflects their true market value at
-                  every level of an organization.
-                </p>
-                <p>
-                  Think of it as her recruiting brain attached to an AI tool: practical, direct guidance designed to
-                  get candidates to interviews and help them negotiate from a stronger position.
+                  The goal is simple: give people clearer insight so they can present their work, their story, and
+                  their value with more confidence.
                 </p>
               </div>
             </div>
-
-            <div>
-              <h2 className="text-lg font-semibold text-slate-900">Credibility</h2>
-              <p className="mt-2">
-                She has led hiring work across Sui Foundation, Polygon, Robinhood, DoorDash, and Yelp.
-              </p>
-            </div>
-
-            <div>
-              <h2 className="text-lg font-semibold text-slate-900">Scale Proof</h2>
-              <p className="mt-2">
-                She has built recruiting functions from zero and scaled hiring across engineering, product,
-                go-to-market, and leadership roles, from entry-level through C-suite.
-              </p>
-            </div>
-
-            <div>
-              <h2 className="text-lg font-semibold text-slate-900">Background</h2>
-              <p className="mt-2">
-                Mads did not follow an elite-school or pedigree-network path. She built her career through pattern
-                recognition, thousands of candidate conversations, and years inside real hiring environments.
-              </p>
-              <p className="mt-3 font-medium text-slate-900">
-                Her approach comes from real hiring environments, not resume theory.
-              </p>
-            </div>
-
-            <p>
-              If the feedback feels direct, that&apos;s intentional. The goal is clarity and interview outcomes.
-            </p>
           </div>
           <div className="mt-8 flex flex-wrap gap-3">
             <a
