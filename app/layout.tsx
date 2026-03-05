@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "MadsHatter",
+  title: "MadsHatter - AI Resume Reviewer",
   description: "MadsHatter",
   icons: {
     icon: "/mads-hatter-mark.svg",
