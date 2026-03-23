@@ -39,19 +39,15 @@ export default function AdvisoryPage() {
             Hiring advisory for seed and early-stage startups
           </h1>
           <p className="mt-4 max-w-4xl text-base leading-7 text-slate-700">
-            I partner with seed and early-stage startups to build scalable, data-driven recruiting foundations that
-            attract top talent from day one. With a strategic focus on hiring velocity, market alignment, and founder
-            enablement, I help teams hire smarter, not just faster.
+            High-impact recruiting leader and talent operator focused on building and scaling talent functions from
+            the ground up. I help founders and executive teams translate business strategy into hiring roadmaps,
+            sourcing architecture, and org design that supports rapid, high-quality growth.
           </p>
 
-          <div className="mt-6 grid gap-4 md:grid-cols-3">
+          <div className="mt-6 grid gap-4 md:grid-cols-2">
             <div className="rounded-xl border border-slate-200 p-4">
               <p className="text-xs font-medium uppercase tracking-wide text-slate-500">Role</p>
               <p className="mt-2 text-sm font-semibold text-slate-900">Strategic Advisor</p>
-            </div>
-            <div className="rounded-xl border border-slate-200 p-4">
-              <p className="text-xs font-medium uppercase tracking-wide text-slate-500">Company</p>
-              <p className="mt-2 text-sm font-semibold text-slate-900">MadsHatter LLC (Self-employed)</p>
             </div>
             <div className="rounded-xl border border-slate-200 p-4">
               <p className="text-xs font-medium uppercase tracking-wide text-slate-500">Since</p>
@@ -65,13 +61,70 @@ export default function AdvisoryPage() {
           </div>
 
           <div className="mt-8 rounded-xl border border-slate-200 p-5">
-            <h2 className="text-lg font-semibold text-slate-900">How I help</h2>
+            <h2 className="text-lg font-semibold text-slate-900">What this looks like in practice</h2>
             <ul className="mt-3 space-y-2 text-sm leading-6 text-slate-700">
-              <li>• Build recruiting infrastructure from zero (process, scorecards, interview loops)</li>
-              <li>• Calibrate role architecture, level expectations, and market realities</li>
-              <li>• Improve hiring velocity while preserving quality bar and decision rigor</li>
-              <li>• Coach founders and leaders on interview quality and close strategy</li>
+              <li>
+                • Built Sui Foundation&apos;s talent function from zero as first Head of Talent, scaling roughly 30 to
+                75 FTE while supporting 25+ contractors.
+              </li>
+              <li>
+                • Delivered 50+ hires across engineering, product, GTM, community, legal, compliance, and operations.
+              </li>
+              <li>
+                • At Polygon, reduced average time-to-fill from 210 days to 42 days and improved top-of-funnel
+                diversity by 23%.
+              </li>
+              <li>
+                • At DoorDash, ran pilots that improved time-to-fill by up to 53% and supported org-wide rollout.
+              </li>
+              <li>
+                • Built and coached recruiting teams, trained interviewers, and partnered directly with founders and
+                C-suite leaders on hiring strategy.
+              </li>
             </ul>
+          </div>
+
+          <div className="mt-8 rounded-xl border border-slate-200 p-5">
+            <h2 className="text-lg font-semibold text-slate-900">Selected advisory case studies</h2>
+            <div className="mt-4 grid gap-4 md:grid-cols-3">
+              <article className="rounded-lg border border-slate-200 bg-slate-50 p-4">
+                <p className="text-sm font-semibold text-slate-900">Sui Foundation</p>
+                <p className="mt-2 text-xs font-semibold uppercase tracking-wide text-slate-500">Problem</p>
+                <p className="mt-1 text-sm text-slate-700">No dedicated recruiting function during rapid growth.</p>
+                <p className="mt-2 text-xs font-semibold uppercase tracking-wide text-slate-500">Action</p>
+                <p className="mt-1 text-sm text-slate-700">
+                  Built talent ops from zero, led full-cycle hiring, and partnered on founder-level headcount planning.
+                </p>
+                <p className="mt-2 text-xs font-semibold uppercase tracking-wide text-slate-500">Outcome</p>
+                <p className="mt-1 text-sm text-slate-700">Scaled from ~30 to 75 FTE while supporting 25+ contractors.</p>
+              </article>
+
+              <article className="rounded-lg border border-slate-200 bg-slate-50 p-4">
+                <p className="text-sm font-semibold text-slate-900">Polygon</p>
+                <p className="mt-2 text-xs font-semibold uppercase tracking-wide text-slate-500">Problem</p>
+                <p className="mt-1 text-sm text-slate-700">Slow hiring cycle and inconsistent recruiting process globally.</p>
+                <p className="mt-2 text-xs font-semibold uppercase tracking-wide text-slate-500">Action</p>
+                <p className="mt-1 text-sm text-slate-700">
+                  Implemented global recruiting strategy, KPIs/OKRs, and standardized interview process.
+                </p>
+                <p className="mt-2 text-xs font-semibold uppercase tracking-wide text-slate-500">Outcome</p>
+                <p className="mt-1 text-sm text-slate-700">
+                  Reduced average time-to-fill from 210 days to 42 days and increased diversity at top of funnel by 23%.
+                </p>
+              </article>
+
+              <article className="rounded-lg border border-slate-200 bg-slate-50 p-4">
+                <p className="text-sm font-semibold text-slate-900">DoorDash</p>
+                <p className="mt-2 text-xs font-semibold uppercase tracking-wide text-slate-500">Problem</p>
+                <p className="mt-1 text-sm text-slate-700">Need to scale GTM hiring quality and speed across multiple verticals.</p>
+                <p className="mt-2 text-xs font-semibold uppercase tracking-wide text-slate-500">Action</p>
+                <p className="mt-1 text-sm text-slate-700">
+                  Led recruiting pilots, built reporting strategy, and partnered on process/training rollouts.
+                </p>
+                <p className="mt-2 text-xs font-semibold uppercase tracking-wide text-slate-500">Outcome</p>
+                <p className="mt-1 text-sm text-slate-700">Improved time-to-fill by an average of 53% in pilot roles.</p>
+              </article>
+            </div>
           </div>
 
           <div className="mt-8 flex flex-wrap gap-3">

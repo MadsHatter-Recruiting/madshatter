@@ -31,6 +31,12 @@ const FEATURES = [
   }
 ] as const;
 
+const PROOF_METRICS = [
+  { label: "Hires delivered", value: "50+" },
+  { label: "Time-to-fill improvement", value: "210d \u2192 42d" },
+  { label: "Advisory experience", value: "8+ years" }
+] as const;
+
 type ApiError = { error?: string };
 
 const SectionTitle = ({ children }: { children: React.ReactNode }) => (
@@ -173,6 +179,61 @@ export default function HomePage() {
           </div>
         </header>
 
+        <section className="sticky top-3 z-20 mb-6 rounded-2xl border border-slate-200 bg-white/95 px-4 py-3 shadow-sm backdrop-blur sm:px-6">
+          <div className="flex flex-wrap items-center gap-2 sm:gap-3">
+            <span className="text-xs font-semibold uppercase tracking-wide text-slate-500">Go to:</span>
+            <a
+              href="/candidates"
+              className="rounded-full border border-sky-200 bg-sky-50 px-3 py-1.5 text-xs font-semibold text-sky-800 transition hover:border-sky-300"
+            >
+              Candidate Support
+            </a>
+            <a
+              href="/advisory"
+              className="rounded-full border border-emerald-200 bg-emerald-50 px-3 py-1.5 text-xs font-semibold text-emerald-800 transition hover:border-emerald-300"
+            >
+              Advisory Services
+            </a>
+            <a
+              href="/#review"
+              className="rounded-full border border-slate-300 px-3 py-1.5 text-xs font-semibold text-slate-700 transition hover:border-slate-400"
+            >
+              Resume Tool
+            </a>
+          </div>
+        </section>
+
+        <section className="rounded-2xl bg-white p-8 shadow-sm ring-1 ring-slate-200 sm:p-10">
+          <SectionTitle>Choose your path</SectionTitle>
+          <p className="mt-3 text-sm leading-6 text-slate-600">
+            Start here: pick the experience that fits you best.
+          </p>
+          <div className="mt-6 grid gap-4 md:grid-cols-2">
+            <a
+              href="/advisory"
+              className="rounded-xl border border-emerald-200 bg-emerald-50/40 p-5 transition hover:border-emerald-300"
+            >
+              <p className="text-xs font-semibold uppercase tracking-wide text-emerald-700">For businesses</p>
+              <h3 className="mt-2 text-lg font-semibold text-slate-900">Startup Hiring Advisory</h3>
+              <p className="mt-2 text-sm leading-6 text-slate-600">
+                Strategic advisory for founders and leaders building recruiting foundations from zero.
+              </p>
+              <p className="mt-3 text-sm font-medium text-emerald-800">View advisory services</p>
+            </a>
+            <a
+              href="/candidates"
+              className="rounded-xl border border-sky-200 bg-sky-50/40 p-5 transition hover:border-sky-300"
+            >
+              <p className="text-xs font-semibold uppercase tracking-wide text-sky-700">For candidates</p>
+              <h3 className="mt-2 text-lg font-semibold text-slate-900">Resume + Interview Support</h3>
+              <p className="mt-2 text-sm leading-6 text-slate-600">
+                One experience for resume review, interview prep, and offer negotiation support.
+              </p>
+              <p className="mt-3 text-sm font-medium text-sky-800">Get candidate support</p>
+            </a>
+          </div>
+        </section>
+
         <section className="rounded-2xl bg-white p-8 shadow-sm ring-1 ring-slate-200 sm:p-10">
           <div className="grid gap-8 md:grid-cols-2 md:gap-10">
             <div>
@@ -189,6 +250,10 @@ export default function HomePage() {
                 leadership and C-suite hires &mdash; and has partnered directly with founders and executives to build
                 hiring strategy and teams from zero.
               </p>
+              <p className="mt-3">
+                She also advises seed and early-stage startups through MadsHatter LLC, helping teams design scalable,
+                data-driven recruiting foundations and hire with stronger speed, signal, and market alignment.
+              </p>
               <div className="mt-6">
                 <a
                   href="/mads"
@@ -201,43 +266,22 @@ export default function HomePage() {
           </div>
         </section>
 
-        <section className="mt-6 rounded-2xl bg-white p-8 shadow-sm ring-1 ring-slate-200 sm:p-10">
-          <SectionTitle>Choose your path</SectionTitle>
-          <p className="mt-3 text-sm leading-6 text-slate-600">
-            The Mads Hatter supports both sides: startup teams that need hiring advisory support and candidates who
-            want stronger resume and interview outcomes.
-          </p>
-          <div className="mt-6 grid gap-4 md:grid-cols-2">
-            <a
-              href="/advisory"
-              className="rounded-xl border border-emerald-200 bg-emerald-50/40 p-5 transition hover:border-emerald-300"
-            >
-              <p className="text-xs font-semibold uppercase tracking-wide text-emerald-700">For businesses</p>
-              <h3 className="mt-2 text-lg font-semibold text-slate-900">Startup Hiring Advisory</h3>
-              <p className="mt-2 text-sm leading-6 text-slate-600">
-                Build scalable, data-driven recruiting foundations with support tailored for seed and early-stage
-                teams.
-              </p>
-              <p className="mt-3 text-sm font-medium text-emerald-800">View advisory work</p>
-            </a>
-            <a
-              href="/candidates"
-              className="rounded-xl border border-sky-200 bg-sky-50/40 p-5 transition hover:border-sky-300"
-            >
-              <p className="text-xs font-semibold uppercase tracking-wide text-sky-700">For candidates</p>
-              <h3 className="mt-2 text-lg font-semibold text-slate-900">Resume + Interview Support</h3>
-              <p className="mt-2 text-sm leading-6 text-slate-600">
-                Use the resume tool, interview prep, and negotiation support to improve your odds of landing the role.
-              </p>
-              <p className="mt-3 text-sm font-medium text-sky-800">Get resume help</p>
-            </a>
+        <section className="mt-6 rounded-2xl bg-white p-6 shadow-sm ring-1 ring-slate-200 sm:p-8">
+          <div className="grid gap-3 sm:grid-cols-3">
+            {PROOF_METRICS.map((metric) => (
+              <div key={metric.label} className="rounded-xl border border-slate-200 bg-slate-50 p-4">
+                <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">{metric.label}</p>
+                <p className="mt-1 text-2xl font-bold text-slate-900">{metric.value}</p>
+              </div>
+            ))}
           </div>
         </section>
 
-        <LogoTicker />
-
         <section className="mt-6 rounded-2xl bg-white p-8 shadow-sm ring-1 ring-slate-200 sm:p-10">
-          <SectionTitle>What you can use this for</SectionTitle>
+          <SectionTitle>Candidate support in one experience</SectionTitle>
+          <p className="mt-3 text-sm leading-6 text-slate-600">
+            Everything candidate-facing is connected here: resume review, interview prep, and offer negotiation.
+          </p>
           <div className="mt-6 grid gap-4 md:grid-cols-3">
             {FEATURES.map((feature) => (
               <a
@@ -431,6 +475,8 @@ export default function HomePage() {
             </p>
           ) : null}
         </section>
+
+        <LogoTicker />
 
         <footer className="mt-10 text-center text-sm text-slate-500">
           <p className="mb-3 text-xs leading-5 text-slate-500">
