@@ -107,7 +107,7 @@ export default function HomePage() {
               href="/mads"
               className="inline-flex rounded-lg border border-slate-300 px-5 py-3 text-sm font-semibold text-slate-700 transition hover:border-slate-400"
             >
-              More about Mads
+              About the Founder
             </a>
           </div>
         </section>

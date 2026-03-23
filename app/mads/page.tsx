@@ -76,65 +76,56 @@ export default function MadsPage() {
           <div className="mt-6 max-w-4xl space-y-7 text-base leading-7 text-slate-700">
             <div className="space-y-4">
               <p className="text-xl font-semibold leading-8 text-slate-900">See hiring the way insiders do.</p>
-              <p>Most candidates never get a clear look at how hiring decisions are actually made.</p>
-              <p>The Mads Hatter was built to change that.</p>
               <p>
-                This tool reviews your resume through the same lens recruiters and hiring managers use every day
-                helping you understand what stands out, what might raise questions, and how to strengthen your story
-                before you enter the process.
+                Most candidates never get a clear look at how hiring decisions are actually made. The Mads Hatter was
+                built to change that.
               </p>
               <p>
-                Beyond the tool, Mads operates as a talent and organizational amplifier: helping leaders turn business
-                priorities into hiring strategy, team design, and execution rhythms that scale.
+                This tool reviews your resume through the same lens recruiters and hiring managers use every day:
+                helping you understand what stands out, what raises questions, and how to strengthen your story before
+                you enter the process.
               </p>
-              <p className="font-medium text-slate-900">Built from real hiring environments, not resume theory.</p>
+              <p>Built from real hiring environments, not resume theory.</p>
             </div>
 
             <div>
               <h2 className="text-lg font-semibold text-slate-900">Why This Exists</h2>
               <div className="mt-2 space-y-4">
                 <p>
-                  After years working inside hiring teams, one thing became clear: many talented people are navigating
-                  the job search without visibility into how decisions are actually made.
+                  After years inside hiring teams, one thing became clear: many talented people are navigating the job
+                  search without visibility into how decisions are actually made.
                 </p>
-                <p>The Mads Hatter was built to offer that perspective.</p>
                 <p>
-                  It brings together patterns from real hiring environments from early-career roles to executive
-                  searches to help candidates better understand how their experience is likely to be interpreted
+                  The Mads Hatter brings together patterns from real hiring environments, from early-career roles to
+                  executive searches, so candidates can better understand how their experience will be interpreted
                   inside the room.
                 </p>
                 <p>
-                  The same advisory lens is used with startups and growth-stage teams: clarify org needs, tighten
-                  hiring decisions, and build talent systems that improve speed and quality at the same time.
-                </p>
-                <p>
-                  The goal is simple: give people clearer insight so they can present their work, their story, and
-                  their value with more confidence.
+                  The goal is simple: help people present their work, their story, and their value with more clarity
+                  and confidence.
                 </p>
               </div>
             </div>
 
             <div>
-              <h2 className="text-lg font-semibold text-slate-900">About Mads</h2>
+              <h2 className="text-lg font-semibold text-slate-900">Operator + Advisor</h2>
               <div className="mt-2 space-y-4">
                 <p>
                   Madeline (Mads) Rodriguez has spent her career inside high-growth companies helping teams scale and
-                  making hiring decisions across roles ranging from entry-level talent to executive leadership.
+                  making hiring decisions across roles from entry-level talent to executive leadership.
+                </p>
+                <p>She is the Founder &amp; CEO of The Mads Hatter.</p>
+                <p>
+                  Her experience spans Sui, Polygon, Robinhood, DoorDash, and Yelp, and includes thousands of resume
+                  reviews, interviews, and hiring debriefs where final decisions are made.
                 </p>
                 <p>
-                  Her experience spans companies including OpenAI, Sui, Polygon, Robinhood, DoorDash, and Yelp.
+                  Beyond candidate coaching, she advises founders and executive teams on organizational growth, turning
+                  business priorities into hiring strategy, role calibration, and recruiting infrastructure that scales.
                 </p>
-                <p>
-                  Over the years she&apos;s participated in thousands of resume reviews, interviews, and hiring
-                  debriefs — the conversations where final decisions are made.
-                </p>
-                <p>
-                  She also advises founders and executive teams on organizational growth, acting as a practical
-                  operator across talent strategy, role calibration, and recruiting infrastructure.
-                </p>
-                <p>The Mads Hatter is her way of sharing some of that perspective more broadly.</p>
               </div>
             </div>
+
           </div>
           <div className="mt-8 flex flex-wrap gap-3">
             <a
