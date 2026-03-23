@@ -1,4 +1,3 @@
-const CALENDLY_URL = "https://calendly.com/madshatter/30min";
 
 export default function NegotiationPage() {
   return (
@@ -89,14 +88,6 @@ export default function NegotiationPage() {
           </div>
 
           <div className="mt-8 flex flex-wrap gap-3">
-            <a
-              href={CALENDLY_URL}
-              target="_blank"
-              rel="noreferrer"
-              className="rounded-lg bg-slate-900 px-5 py-3 text-sm font-semibold text-white"
-            >
-              Book Negotiation Session
-            </a>
             <a
               href="/"
               className="rounded-lg border border-slate-300 px-5 py-3 text-sm font-semibold text-slate-700"

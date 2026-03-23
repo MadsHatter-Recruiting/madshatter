@@ -1,15 +1,12 @@
 "use client";
 
 const LINKEDIN_URL = "https://www.linkedin.com/in/madelinerodz/";
-const CALENDLY_URL = "https://calendly.com/madshatter/30min";
 
 const PROOF_METRICS = [
   { label: "Recruiting built from zero", value: "0 \u2192 1 systems" },
   { label: "Time-to-fill improvement", value: "210d \u2192 42d" },
   { label: "Advisory experience", value: "8+ years" }
 ] as const;
-
-type ApiError = { error?: string };
 
 const SectionTitle = ({ children }: { children: React.ReactNode }) => (
   <h2 className="text-2xl font-semibold tracking-tight text-slate-900">{children}</h2>
@@ -187,10 +184,6 @@ export default function HomePage() {
           </p>
           <a href={LINKEDIN_URL} target="_blank" rel="noreferrer" className="underline-offset-2 hover:underline">
             LinkedIn
-          </a>
-          <span className="mx-2">•</span>
-          <a href={CALENDLY_URL} target="_blank" rel="noreferrer" className="underline-offset-2 hover:underline">
-            Chat with Mads
           </a>
         </footer>
       </div>

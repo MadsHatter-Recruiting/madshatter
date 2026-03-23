@@ -1,4 +1,3 @@
-const CALENDLY_URL = "https://calendly.com/madshatter/30min";
 
 const SUPPORTED_ORGS = ["DoorDash", "WondersCo", "Eventbrite", "GoPuff", "Instawork", "Exact Data"] as const;
 
@@ -128,14 +127,6 @@ export default function AdvisoryPage() {
           </div>
 
           <div className="mt-8 flex flex-wrap gap-3">
-            <a
-              href={CALENDLY_URL}
-              target="_blank"
-              rel="noreferrer"
-              className="rounded-lg bg-slate-900 px-5 py-3 text-sm font-semibold text-white"
-            >
-              Book Advisory Call
-            </a>
             <a href="/" className="rounded-lg border border-slate-300 px-5 py-3 text-sm font-semibold text-slate-700">
               Back to Home
             </a>

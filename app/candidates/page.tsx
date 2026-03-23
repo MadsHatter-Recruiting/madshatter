@@ -1,8 +1,6 @@
 import LogoTicker from "@/components/LogoTicker";
 import ResumeReviewTool from "@/components/ResumeReviewTool";
 
-const CALENDLY_URL = "https://calendly.com/madshatter/30min";
-
 export default function CandidatesPage() {
   return (
     <main id="top" className="pb-20 pt-6 sm:pb-24 sm:pt-8">
@@ -104,15 +102,11 @@ export default function CandidatesPage() {
             <a href="#review" className="rounded-lg bg-slate-900 px-5 py-3 text-sm font-semibold text-white">
               Start Resume Review
             </a>
-            <a
-              href={CALENDLY_URL}
-              target="_blank"
-              rel="noreferrer"
-              className="rounded-lg border border-slate-300 px-5 py-3 text-sm font-semibold text-slate-700"
-            >
-              Book a Session
-            </a>
           </div>
+
+          <p className="mt-4 text-sm text-slate-600">
+            Use the floating button to book a free consultation and identify the best support path.
+          </p>
         </section>
 
         <ResumeReviewTool />

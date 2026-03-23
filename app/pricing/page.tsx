@@ -1,29 +1,28 @@
-const CALENDLY_URL = "https://calendly.com/madshatter/30min";
-
 const PRICING_TIERS = [
+  {
+    name: "Free Candidate Consultation",
+    price: "$0 · 15 min",
+    details: "A quick intro chat to understand your goals and recommend the right support path."
+  },
   {
     name: "Live Resume Review",
     price: "$149 · 30 min",
-    details: "Live working session to improve your resume and positioning in real time.",
-    cta: "Chat with Mads"
+    details: "Live working session to improve your resume and positioning in real time."
   },
   {
     name: "Interview Prep Session",
     price: "$149 · 30 min",
-    details: "Role-specific prep focused on signal, delivery, and hiring-debrief expectations.",
-    cta: "Book Interview Prep"
+    details: "Role-specific prep focused on signal, delivery, and hiring-debrief expectations."
   },
   {
     name: "Offer Negotiation Session",
     price: "$149 · 30 min",
-    details: "Compensation strategy, negotiation framing, and how to push without losing trust.",
-    cta: "Chat with Mads"
+    details: "Compensation strategy, negotiation framing, and how to push without losing trust."
   },
   {
     name: "All-In Package",
     price: "$399",
-    details: "Complete support: resume strategy, interview prep, and offer negotiation guidance.",
-    cta: "Book All-In Package"
+    details: "Complete support: resume strategy, interview prep, and offer negotiation guidance."
   }
 ] as const;
 
@@ -99,16 +98,6 @@ export default function PricingPage() {
                 <p className="text-2xl font-semibold text-slate-900">{tier.name}</p>
                 <p className="mt-2 text-sm font-medium text-slate-700">{tier.price}</p>
                 <p className="mt-2 text-sm leading-6 text-slate-600">{tier.details}</p>
-                {"cta" in tier ? (
-                  <a
-                    href={CALENDLY_URL}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="mt-4 inline-flex rounded-lg bg-slate-900 px-4 py-2 text-sm font-semibold text-white"
-                  >
-                    {tier.cta}
-                  </a>
-                ) : null}
               </div>
             ))}
           </div>

@@ -4,7 +4,6 @@ import { FormEvent, useMemo, useState } from "react";
 import { isTargetedReview, ReviewResponse } from "@/lib/types";
 
 const LINKEDIN_URL = "https://www.linkedin.com/in/madelinerodz/";
-const CALENDLY_URL = "https://calendly.com/madshatter/30min";
 
 type ApiError = { error?: string };
 
@@ -209,15 +208,10 @@ export default function ResumeReviewTool() {
               <li>We&apos;ll tailor it to your target role</li>
               <li>You&apos;ll leave with an interview-ready version</li>
             </ul>
+            <p className="mt-4 text-sm text-slate-200">
+              Use the floating button to book a free consultation and confirm fit.
+            </p>
             <div className="mt-5 flex flex-wrap gap-3">
-              <a
-                href={CALENDLY_URL}
-                target="_blank"
-                rel="noreferrer"
-                className="rounded-lg bg-white px-4 py-2 text-sm font-semibold text-slate-900"
-              >
-                Chat with Mads
-              </a>
               <a
                 href={LINKEDIN_URL}
                 target="_blank"
