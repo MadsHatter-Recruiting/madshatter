@@ -1,5 +1,4 @@
 const LINKEDIN_URL = "https://www.linkedin.com/in/madelinerodz/";
-const CALENDLY_URL = "https://calendly.com/madshatter/30min";
 const MADS_PHOTO_URL = "/mads-photo.jpg";
 
 export default function MadsPage() {
@@ -84,6 +83,10 @@ export default function MadsPage() {
                 helping you understand what stands out, what might raise questions, and how to strengthen your story
                 before you enter the process.
               </p>
+              <p>
+                Beyond the tool, Mads operates as a talent and organizational amplifier: helping leaders turn business
+                priorities into hiring strategy, team design, and execution rhythms that scale.
+              </p>
               <p className="font-medium text-slate-900">Built from real hiring environments, not resume theory.</p>
             </div>
 
@@ -99,6 +102,10 @@ export default function MadsPage() {
                   It brings together patterns from real hiring environments from early-career roles to executive
                   searches to help candidates better understand how their experience is likely to be interpreted
                   inside the room.
+                </p>
+                <p>
+                  The same advisory lens is used with startups and growth-stage teams: clarify org needs, tighten
+                  hiring decisions, and build talent systems that improve speed and quality at the same time.
                 </p>
                 <p>
                   The goal is simple: give people clearer insight so they can present their work, their story, and
@@ -121,6 +128,10 @@ export default function MadsPage() {
                   Over the years she&apos;s participated in thousands of resume reviews, interviews, and hiring
                   debriefs — the conversations where final decisions are made.
                 </p>
+                <p>
+                  She also advises founders and executive teams on organizational growth, acting as a practical
+                  operator across talent strategy, role calibration, and recruiting infrastructure.
+                </p>
                 <p>The Mads Hatter is her way of sharing some of that perspective more broadly.</p>
               </div>
             </div>
@@ -133,14 +144,6 @@ export default function MadsPage() {
               className="rounded-lg border border-slate-300 px-5 py-3 text-sm font-semibold text-slate-700"
             >
               LinkedIn
-            </a>
-            <a
-              href={CALENDLY_URL}
-              target="_blank"
-              rel="noreferrer"
-              className="rounded-lg bg-sky-600 px-5 py-3 text-sm font-semibold text-white"
-            >
-              Chat with Mads
             </a>
             <a
               href="/"
