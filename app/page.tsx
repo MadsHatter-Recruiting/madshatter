@@ -152,34 +152,15 @@ export default function HomePage() {
         </section>
 
         <section className="rounded-2xl bg-white p-8 shadow-sm ring-1 ring-slate-200 sm:p-10">
-          <div className="grid gap-8 md:grid-cols-2 md:gap-10">
-            <div>
-              <img src="/mads-hatter-logo.png" alt="Mads Hatter logo" className="mb-6 w-full max-w-md" />
-              <p className="max-w-4xl text-base leading-7 text-slate-600">Built from real hiring decisions.</p>
-            </div>
-            <div className="text-base leading-7 text-slate-600">
-              <p>
-                Built by Mads Rodriguez, a talent leader who has helped scale teams at Sui Foundation, Polygon,
-                Robinhood, DoorDash, and Yelp.
-              </p>
-              <p className="mt-3">
-                She has hired across every level of an organization &mdash; from entry-level roles to senior
-                leadership and C-suite hires &mdash; and has partnered directly with founders and executives to build
-                hiring strategy and teams from zero.
-              </p>
-              <p className="mt-3">
-                She also advises seed and early-stage startups through MadsHatter LLC, helping teams design scalable,
-                data-driven recruiting foundations and hire with stronger speed, signal, and market alignment.
-              </p>
-              <div className="mt-6">
-                <a
-                  href="/mads"
-                  className="inline-flex rounded-lg border border-slate-300 px-5 py-3 text-sm font-semibold text-slate-700 transition hover:border-slate-400"
-                >
-                  More about Mads
-                </a>
-              </div>
-            </div>
+          <img src="/mads-hatter-logo.png" alt="Mads Hatter logo" className="mb-6 w-full max-w-md" />
+          <p className="max-w-4xl text-base leading-7 text-slate-600">Built from real hiring decisions.</p>
+          <div className="mt-6">
+            <a
+              href="/mads"
+              className="inline-flex rounded-lg border border-slate-300 px-5 py-3 text-sm font-semibold text-slate-700 transition hover:border-slate-400"
+            >
+              More about Mads
+            </a>
           </div>
         </section>
 

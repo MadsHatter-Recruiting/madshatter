@@ -2,16 +2,6 @@ const CALENDLY_URL = "https://calendly.com/madshatter/30min";
 
 const PRICING_TIERS = [
   {
-    name: "Resume Review (Free)",
-    price: "$0",
-    details: "One recruiter-style resume review."
-  },
-  {
-    name: "Job Target Review",
-    price: "Free",
-    details: "Match score, gap analysis, and tailored recommendations."
-  },
-  {
     name: "Live Resume Review",
     price: "$149 · 30 min",
     details: "Live working session to improve your resume and positioning in real time.",
