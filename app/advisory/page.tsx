@@ -1,5 +1,36 @@
 
-const SUPPORTED_ORGS = ["DoorDash", "WondersCo", "Eventbrite", "GoPuff", "Instawork", "Exact Data"] as const;
+const SUPPORTED_ORGS = ["Wonders", "DoorDash", "Eventbrite", "Exact Data"] as const;
+
+const ADVISORY_CASE_STUDIES = [
+  {
+    company: "Wonders",
+    problem: "Needed a more disciplined recruiting strategy with better speed and stronger diversity outcomes.",
+    action:
+      "Developed a data-driven recruiting strategy, expanded sourcing channels, optimized the ATS, and introduced a skills-based interview process.",
+    outcome: "Reduced time-to-hire by 25% and increased diverse hires by 15%.",
+  },
+  {
+    company: "DoorDash",
+    problem: "Needed a sharper GTM recruiting approach with better candidate flow and stronger applicant quality.",
+    action:
+      "Led a beta test to overhaul GTM recruiting strategy through employer branding, search-optimized job descriptions, and broader social sourcing.",
+    outcome: "Increased qualified applications by 30% and improved candidate quality by 10% while lowering recruiting costs.",
+  },
+  {
+    company: "Eventbrite",
+    problem: "HR leadership needed a clearer talent acquisition plan to support rapid growth across multiple roles.",
+    action:
+      "Built detailed hiring plans, launched an internal referral program, and improved the candidate experience across the funnel.",
+    outcome: "Improved hiring speed for key roles by 20% and reduced cost per hire by 15%.",
+  },
+  {
+    company: "Exact Data",
+    problem: "Needed a GTM recruiting process and supporting tech stack to create a more scalable hiring foundation.",
+    action:
+      "Launched the GTM recruiting process and implemented the recruiting tech stack to support more consistent execution and visibility.",
+    outcome: "Established a repeatable operating foundation for GTM hiring and future scale.",
+  },
+] as const;
 
 export default function AdvisoryPage() {
   return (
@@ -63,66 +94,34 @@ export default function AdvisoryPage() {
             <h2 className="text-lg font-semibold text-slate-900">What this looks like in practice</h2>
             <ul className="mt-3 space-y-2 text-sm leading-6 text-slate-700">
               <li>
-                • Built Sui Foundation&apos;s talent function from zero as first Head of Talent, scaling roughly 30 to
-                75 FTE while supporting 25+ contractors.
+                • Partner with founders and executive teams on hiring roadmaps, role calibration, and search strategy.
               </li>
               <li>
-                • Delivered 50+ hires across engineering, product, GTM, community, legal, compliance, and operations.
+                • Build recruiting systems, interview design, and tech stacks that improve speed, signal, and process consistency.
               </li>
               <li>
-                • At Polygon, reduced average time-to-fill from 210 days to 42 days and improved top-of-funnel
-                diversity by 23%.
+                • Launch targeted recruiting programs that improve candidate quality, hiring efficiency, and diversity outcomes.
               </li>
               <li>
-                • At DoorDash, ran pilots that improved time-to-fill by up to 53% and supported org-wide rollout.
-              </li>
-              <li>
-                • Built and coached recruiting teams, trained interviewers, and partnered directly with founders and
-                C-suite leaders on hiring strategy.
+                • Step in on a contract or advisory basis when a team needs senior recruiting judgment without a full-time buildout.
               </li>
             </ul>
           </div>
 
           <div className="mt-8 rounded-xl border border-slate-200 p-5">
             <h2 className="text-lg font-semibold text-slate-900">Selected advisory case studies</h2>
-            <div className="mt-4 grid gap-4 md:grid-cols-3">
-              <article className="rounded-lg border border-slate-200 bg-slate-50 p-4">
-                <p className="text-sm font-semibold text-slate-900">Sui Foundation</p>
-                <p className="mt-2 text-xs font-semibold uppercase tracking-wide text-slate-500">Problem</p>
-                <p className="mt-1 text-sm text-slate-700">No dedicated recruiting function during rapid growth.</p>
-                <p className="mt-2 text-xs font-semibold uppercase tracking-wide text-slate-500">Action</p>
-                <p className="mt-1 text-sm text-slate-700">
-                  Built talent ops from zero, led full-cycle hiring, and partnered on founder-level headcount planning.
-                </p>
-                <p className="mt-2 text-xs font-semibold uppercase tracking-wide text-slate-500">Outcome</p>
-                <p className="mt-1 text-sm text-slate-700">Scaled from ~30 to 75 FTE while supporting 25+ contractors.</p>
-              </article>
-
-              <article className="rounded-lg border border-slate-200 bg-slate-50 p-4">
-                <p className="text-sm font-semibold text-slate-900">Polygon</p>
-                <p className="mt-2 text-xs font-semibold uppercase tracking-wide text-slate-500">Problem</p>
-                <p className="mt-1 text-sm text-slate-700">Slow hiring cycle and inconsistent recruiting process globally.</p>
-                <p className="mt-2 text-xs font-semibold uppercase tracking-wide text-slate-500">Action</p>
-                <p className="mt-1 text-sm text-slate-700">
-                  Implemented global recruiting strategy, KPIs/OKRs, and standardized interview process.
-                </p>
-                <p className="mt-2 text-xs font-semibold uppercase tracking-wide text-slate-500">Outcome</p>
-                <p className="mt-1 text-sm text-slate-700">
-                  Reduced average time-to-fill from 210 days to 42 days and increased diversity at top of funnel by 23%.
-                </p>
-              </article>
-
-              <article className="rounded-lg border border-slate-200 bg-slate-50 p-4">
-                <p className="text-sm font-semibold text-slate-900">DoorDash</p>
-                <p className="mt-2 text-xs font-semibold uppercase tracking-wide text-slate-500">Problem</p>
-                <p className="mt-1 text-sm text-slate-700">Need to scale GTM hiring quality and speed across multiple verticals.</p>
-                <p className="mt-2 text-xs font-semibold uppercase tracking-wide text-slate-500">Action</p>
-                <p className="mt-1 text-sm text-slate-700">
-                  Led recruiting pilots, built reporting strategy, and partnered on process/training rollouts.
-                </p>
-                <p className="mt-2 text-xs font-semibold uppercase tracking-wide text-slate-500">Outcome</p>
-                <p className="mt-1 text-sm text-slate-700">Improved time-to-fill by an average of 53% in pilot roles.</p>
-              </article>
+            <div className="mt-4 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+              {ADVISORY_CASE_STUDIES.map((study) => (
+                <article key={study.company} className="rounded-lg border border-slate-200 bg-slate-50 p-4">
+                  <p className="text-sm font-semibold text-slate-900">{study.company}</p>
+                  <p className="mt-2 text-xs font-semibold uppercase tracking-wide text-slate-500">Problem</p>
+                  <p className="mt-1 text-sm text-slate-700">{study.problem}</p>
+                  <p className="mt-2 text-xs font-semibold uppercase tracking-wide text-slate-500">Action</p>
+                  <p className="mt-1 text-sm text-slate-700">{study.action}</p>
+                  <p className="mt-2 text-xs font-semibold uppercase tracking-wide text-slate-500">Outcome</p>
+                  <p className="mt-1 text-sm text-slate-700">{study.outcome}</p>
+                </article>
+              ))}
             </div>
           </div>
 

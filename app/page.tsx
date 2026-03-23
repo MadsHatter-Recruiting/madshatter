@@ -3,9 +3,9 @@
 const LINKEDIN_URL = "https://www.linkedin.com/in/madelinerodz/";
 
 const PROOF_METRICS = [
-  { label: "Recruiting built from zero", value: "0 \u2192 1 systems" },
-  { label: "Time-to-fill improvement", value: "210d \u2192 42d" },
-  { label: "Advisory experience", value: "8+ years" }
+  { label: "Advisory experience", value: "8+ years" },
+  { label: "Time-to-hire improvement", value: "25% faster" },
+  { label: "Qualified applicant lift", value: "+30%" }
 ] as const;
 
 const SectionTitle = ({ children }: { children: React.ReactNode }) => (
