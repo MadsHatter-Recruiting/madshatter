@@ -113,6 +113,12 @@ export default function HomePage() {
               <a href="/" className="transition hover:text-slate-900">
                 Home
               </a>
+              <a href="/candidates" className="transition hover:text-slate-900">
+                Resume Help
+              </a>
+              <a href="/advisory" className="transition hover:text-slate-900">
+                Advisory
+              </a>
               <a href="/#review" className="transition hover:text-slate-900">
                 Resume Tool
               </a>
@@ -137,6 +143,12 @@ export default function HomePage() {
               <nav className="absolute right-0 z-20 mt-2 w-52 rounded-xl bg-white p-2 shadow-lg ring-1 ring-slate-200">
                 <a href="/" className="block rounded-md px-3 py-2 text-sm text-slate-700 hover:bg-slate-50">
                   Home
+                </a>
+                <a href="/candidates" className="block rounded-md px-3 py-2 text-sm text-slate-700 hover:bg-slate-50">
+                  Resume Help
+                </a>
+                <a href="/advisory" className="block rounded-md px-3 py-2 text-sm text-slate-700 hover:bg-slate-50">
+                  Advisory
                 </a>
                 <a href="/#review" className="block rounded-md px-3 py-2 text-sm text-slate-700 hover:bg-slate-50">
                   Resume Tool
@@ -186,6 +198,39 @@ export default function HomePage() {
                 </a>
               </div>
             </div>
+          </div>
+        </section>
+
+        <section className="mt-6 rounded-2xl bg-white p-8 shadow-sm ring-1 ring-slate-200 sm:p-10">
+          <SectionTitle>Choose your path</SectionTitle>
+          <p className="mt-3 text-sm leading-6 text-slate-600">
+            The Mads Hatter supports both sides: startup teams that need hiring advisory support and candidates who
+            want stronger resume and interview outcomes.
+          </p>
+          <div className="mt-6 grid gap-4 md:grid-cols-2">
+            <a
+              href="/advisory"
+              className="rounded-xl border border-emerald-200 bg-emerald-50/40 p-5 transition hover:border-emerald-300"
+            >
+              <p className="text-xs font-semibold uppercase tracking-wide text-emerald-700">For businesses</p>
+              <h3 className="mt-2 text-lg font-semibold text-slate-900">Startup Hiring Advisory</h3>
+              <p className="mt-2 text-sm leading-6 text-slate-600">
+                Build scalable, data-driven recruiting foundations with support tailored for seed and early-stage
+                teams.
+              </p>
+              <p className="mt-3 text-sm font-medium text-emerald-800">View advisory work</p>
+            </a>
+            <a
+              href="/candidates"
+              className="rounded-xl border border-sky-200 bg-sky-50/40 p-5 transition hover:border-sky-300"
+            >
+              <p className="text-xs font-semibold uppercase tracking-wide text-sky-700">For candidates</p>
+              <h3 className="mt-2 text-lg font-semibold text-slate-900">Resume + Interview Support</h3>
+              <p className="mt-2 text-sm leading-6 text-slate-600">
+                Use the resume tool, interview prep, and negotiation support to improve your odds of landing the role.
+              </p>
+              <p className="mt-3 text-sm font-medium text-sky-800">Get resume help</p>
+            </a>
           </div>
         </section>
 
