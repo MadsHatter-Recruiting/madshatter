@@ -96,6 +96,23 @@ export default function HomePage() {
           </div>
         </header>
 
+        <section className="mb-6 rounded-2xl bg-white p-4 shadow-sm ring-1 ring-slate-200 sm:p-6">
+          <img
+            src="/mads-hatter-logo.png"
+            alt="Mads Hatter banner"
+            className="h-auto w-full rounded-xl border border-slate-100 object-cover"
+          />
+          <p className="mt-4 max-w-4xl text-base leading-7 text-slate-600">Built from real hiring decisions.</p>
+          <div className="mt-4">
+            <a
+              href="/mads"
+              className="inline-flex rounded-lg border border-slate-300 px-5 py-3 text-sm font-semibold text-slate-700 transition hover:border-slate-400"
+            >
+              More about Mads
+            </a>
+          </div>
+        </section>
+
         <section className="sticky top-3 z-20 mb-6 rounded-2xl border border-slate-200 bg-white/95 px-4 py-3 shadow-sm backdrop-blur sm:px-6">
           <div className="flex flex-wrap items-center gap-2 sm:gap-3">
             <span className="text-xs font-semibold uppercase tracking-wide text-slate-500">Go to:</span>
@@ -147,19 +164,6 @@ export default function HomePage() {
                 One experience for resume review, interview prep, and offer negotiation support.
               </p>
               <p className="mt-3 text-sm font-medium text-sky-800">Get candidate support</p>
-            </a>
-          </div>
-        </section>
-
-        <section className="rounded-2xl bg-white p-8 shadow-sm ring-1 ring-slate-200 sm:p-10">
-          <img src="/mads-hatter-logo.png" alt="Mads Hatter logo" className="mb-6 w-full max-w-md" />
-          <p className="max-w-4xl text-base leading-7 text-slate-600">Built from real hiring decisions.</p>
-          <div className="mt-6">
-            <a
-              href="/mads"
-              className="inline-flex rounded-lg border border-slate-300 px-5 py-3 text-sm font-semibold text-slate-700 transition hover:border-slate-400"
-            >
-              More about Mads
             </a>
           </div>
         </section>
