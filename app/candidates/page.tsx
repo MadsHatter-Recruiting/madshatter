@@ -1,3 +1,6 @@
+import LogoTicker from "@/components/LogoTicker";
+import ResumeReviewTool from "@/components/ResumeReviewTool";
+
 const CALENDLY_URL = "https://calendly.com/madshatter/30min";
 
 export default function CandidatesPage() {
@@ -71,7 +74,7 @@ export default function CandidatesPage() {
           </div>
 
           <div className="mt-8 grid gap-4 md:grid-cols-3">
-            <a href="/#review" className="rounded-xl border border-sky-200 bg-sky-50/40 p-5 transition hover:border-sky-300">
+            <a href="#review" className="rounded-xl border border-sky-200 bg-sky-50/40 p-5 transition hover:border-sky-300">
               <h2 className="text-base font-semibold text-slate-900">Resume Review Tool</h2>
               <p className="mt-2 text-sm leading-6 text-slate-600">
                 Upload a resume, add an optional job description, and get structured feedback fast.
@@ -98,7 +101,7 @@ export default function CandidatesPage() {
           </div>
 
           <div className="mt-8 flex flex-wrap gap-3">
-            <a href="/#review" className="rounded-lg bg-slate-900 px-5 py-3 text-sm font-semibold text-white">
+            <a href="#review" className="rounded-lg bg-slate-900 px-5 py-3 text-sm font-semibold text-white">
               Start Resume Review
             </a>
             <a
@@ -111,6 +114,9 @@ export default function CandidatesPage() {
             </a>
           </div>
         </section>
+
+        <ResumeReviewTool />
+        <LogoTicker />
       </div>
     </main>
   );

@@ -17,7 +17,7 @@ export default function MadsPage() {
               <a href="/" className="transition hover:text-slate-900">
                 Home
               </a>
-              <a href="/#review" className="transition hover:text-slate-900">
+              <a href="/candidates#review" className="transition hover:text-slate-900">
                 Resume Tool
               </a>
               <a href="/interview" className="transition hover:text-slate-900">
@@ -42,7 +42,7 @@ export default function MadsPage() {
                 <a href="/" className="block rounded-md px-3 py-2 text-sm text-slate-700 hover:bg-slate-50">
                   Home
                 </a>
-                <a href="/#review" className="block rounded-md px-3 py-2 text-sm text-slate-700 hover:bg-slate-50">
+                <a href="/candidates#review" className="block rounded-md px-3 py-2 text-sm text-slate-700 hover:bg-slate-50">
                   Resume Tool
                 </a>
                 <a href="/interview" className="block rounded-md px-3 py-2 text-sm text-slate-700 hover:bg-slate-50">
