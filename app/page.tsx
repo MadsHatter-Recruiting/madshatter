@@ -101,7 +101,7 @@ export default function HomePage() {
             <img
               src="/mads-hatter-logo.png"
               alt="Mads Hatter banner"
-              className="h-32 w-full object-cover object-center sm:h-40 lg:h-44"
+              className="h-32 w-full bg-[#F4F2EF] object-contain object-center sm:h-40 lg:h-44"
             />
           </div>
           <p className="mt-4 max-w-4xl text-base leading-7 text-slate-600">Built from real hiring decisions.</p>
