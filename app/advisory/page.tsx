@@ -1,37 +1,6 @@
 
 const SUPPORTED_ORGS = ["Wonders", "DoorDash", "Eventbrite", "Exact Data"] as const;
 
-const ADVISORY_CASE_STUDIES = [
-  {
-    company: "Wonders",
-    problem: "Needed a more disciplined recruiting strategy with better speed and stronger diversity outcomes.",
-    action:
-      "Developed a data-driven recruiting strategy, expanded sourcing channels, optimized the ATS, and introduced a skills-based interview process.",
-    outcome: "Reduced time-to-hire by 25% and increased diverse hires by 15%.",
-  },
-  {
-    company: "DoorDash",
-    problem: "Needed a sharper GTM recruiting approach with better candidate flow and stronger applicant quality.",
-    action:
-      "Led a beta test to overhaul GTM recruiting strategy through employer branding, search-optimized job descriptions, and broader social sourcing.",
-    outcome: "Increased qualified applications by 30% and improved candidate quality by 10% while lowering recruiting costs.",
-  },
-  {
-    company: "Eventbrite",
-    problem: "HR leadership needed a clearer talent acquisition plan to support rapid growth across multiple roles.",
-    action:
-      "Built detailed hiring plans, launched an internal referral program, and improved the candidate experience across the funnel.",
-    outcome: "Improved hiring speed for key roles by 20% and reduced cost per hire by 15%.",
-  },
-  {
-    company: "Exact Data",
-    problem: "Needed a GTM recruiting process and supporting tech stack to create a more scalable hiring foundation.",
-    action:
-      "Launched the GTM recruiting process and implemented the recruiting tech stack to support more consistent execution and visibility.",
-    outcome: "Established a repeatable operating foundation for GTM hiring and future scale.",
-  },
-] as const;
-
 export default function AdvisoryPage() {
   return (
     <main id="top" className="pb-20 pt-6 sm:pb-24 sm:pt-8">
@@ -109,19 +78,44 @@ export default function AdvisoryPage() {
           </div>
 
           <div className="mt-8 rounded-xl border border-slate-200 p-5">
-            <h2 className="text-lg font-semibold text-slate-900">Selected advisory case studies</h2>
-            <div className="mt-4 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
-              {ADVISORY_CASE_STUDIES.map((study) => (
-                <article key={study.company} className="rounded-lg border border-slate-200 bg-slate-50 p-4">
-                  <p className="text-sm font-semibold text-slate-900">{study.company}</p>
-                  <p className="mt-2 text-xs font-semibold uppercase tracking-wide text-slate-500">Problem</p>
-                  <p className="mt-1 text-sm text-slate-700">{study.problem}</p>
-                  <p className="mt-2 text-xs font-semibold uppercase tracking-wide text-slate-500">Action</p>
-                  <p className="mt-1 text-sm text-slate-700">{study.action}</p>
-                  <p className="mt-2 text-xs font-semibold uppercase tracking-wide text-slate-500">Outcome</p>
-                  <p className="mt-1 text-sm text-slate-700">{study.outcome}</p>
-                </article>
-              ))}
+            <h2 className="text-lg font-semibold text-slate-900">Capabilities and focus areas</h2>
+            <div className="mt-4 grid gap-4 md:grid-cols-2">
+              <article className="rounded-lg border border-slate-200 bg-slate-50 p-4">
+                <p className="text-sm font-semibold text-slate-900">Talent Strategy</p>
+                <ul className="mt-2 space-y-1 text-sm text-slate-700">
+                  <li>• Hiring roadmap design aligned to business milestones</li>
+                  <li>• Role calibration and leveling for critical hires</li>
+                  <li>• Headcount planning and sequencing by priority</li>
+                  <li>• Founder and executive partnership on hiring decisions</li>
+                </ul>
+              </article>
+              <article className="rounded-lg border border-slate-200 bg-slate-50 p-4">
+                <p className="text-sm font-semibold text-slate-900">Execution Systems</p>
+                <ul className="mt-2 space-y-1 text-sm text-slate-700">
+                  <li>• 0→1 recruiting process and operating cadence</li>
+                  <li>• Interview architecture, scorecards, and decision quality</li>
+                  <li>• Funnel instrumentation, KPI design, and reporting</li>
+                  <li>• ATS/workflow optimization for speed and consistency</li>
+                </ul>
+              </article>
+              <article className="rounded-lg border border-slate-200 bg-slate-50 p-4">
+                <p className="text-sm font-semibold text-slate-900">Sourcing and Market Reach</p>
+                <ul className="mt-2 space-y-1 text-sm text-slate-700">
+                  <li>• Outbound-first sourcing architecture</li>
+                  <li>• Talent market mapping and competitive targeting</li>
+                  <li>• Employer narrative and role-positioning strategy</li>
+                  <li>• Pipeline quality improvement across priority functions</li>
+                </ul>
+              </article>
+              <article className="rounded-lg border border-slate-200 bg-slate-50 p-4">
+                <p className="text-sm font-semibold text-slate-900">Org and Team Scaling</p>
+                <ul className="mt-2 space-y-1 text-sm text-slate-700">
+                  <li>• Recruiting team design and capability buildout</li>
+                  <li>• Hiring manager enablement and interview training</li>
+                  <li>• Cross-functional alignment on talent priorities</li>
+                  <li>• Systems that balance hiring speed with quality bar</li>
+                </ul>
+              </article>
             </div>
           </div>
 
