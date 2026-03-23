@@ -99,9 +99,9 @@ export default function HomePage() {
         <section className="mb-6 rounded-2xl bg-white p-4 shadow-sm ring-1 ring-slate-200 sm:p-6">
           <div className="overflow-hidden rounded-xl border border-slate-100">
             <img
-              src="/mads-hatter-logo.png"
+              src="/mads-hatter-banner.png"
               alt="Mads Hatter banner"
-              className="h-32 w-full bg-[#F4F2EF] object-contain object-center sm:h-40 lg:h-44"
+              className="h-auto w-full bg-[#F4F2EF] object-contain object-center"
             />
           </div>
           <p className="mt-4 max-w-4xl text-base leading-7 text-slate-600">Built from real hiring decisions.</p>
