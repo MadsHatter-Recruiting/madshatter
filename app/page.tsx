@@ -2,21 +2,34 @@
 
 const LINKEDIN_URL = "https://www.linkedin.com/in/madelinerodz/";
 
-const PROOF_METRICS = [
-  { label: "Advisory experience", value: "8+ years" },
-  { label: "Time-to-hire improvement", value: "25% faster" },
-  { label: "Qualified applicant lift", value: "+30%" }
-] as const;
+const PROOF_METRICS = ["8+ years advisory", "25% faster time-to-hire", "+30% qualified applicant lift"] as const;
 
-const SectionTitle = ({ children }: { children: React.ReactNode }) => (
-  <h2 className="text-2xl font-semibold tracking-tight text-slate-900">{children}</h2>
-);
+const FEATURES = [
+  {
+    title: "Resume Review",
+    href: "/candidates#review",
+    description: "See how your experience reads in a real hiring scan, and what needs tightening before interviews.",
+    accent: "border-sky-300",
+  },
+  {
+    title: "Interview Prep",
+    href: "/interview",
+    description: "Prepare for high-signal questions, delivery, and debrief criteria used by hiring teams.",
+    accent: "border-emerald-300",
+  },
+  {
+    title: "Offer Negotiation",
+    href: "/negotiation",
+    description: "Understand compensation mechanics and negotiate with clarity while preserving trust.",
+    accent: "border-amber-300",
+  },
+] as const;
 
 export default function HomePage() {
   return (
     <main
       id="top"
-      className="bg-gradient-to-b from-sky-50/60 via-slate-50 to-emerald-50/40 pb-20 pt-6 sm:pb-24 sm:pt-8"
+      className="bg-[radial-gradient(circle_at_10%_-15%,#e0f2fe,transparent_34%),radial-gradient(circle_at_85%_0%,#d1fae5,transparent_32%),linear-gradient(to_bottom,#f8fafc,#f8fafc)] pb-20 pt-6 sm:pb-24 sm:pt-8"
     >
       <div className="section-shell">
         <header className="mb-6 rounded-2xl bg-white px-5 py-4 shadow-sm ring-1 ring-slate-200 sm:px-6">
@@ -93,87 +106,80 @@ export default function HomePage() {
           </div>
         </header>
 
-        <section className="mb-6 rounded-2xl bg-white p-4 shadow-sm ring-1 ring-slate-200 sm:p-6">
-          <div className="overflow-hidden rounded-xl border border-slate-100">
-            <img
-              src="/mads-hatter-banner.png"
-              alt="Mads Hatter banner"
-              className="h-auto w-full bg-[#F4F2EF] object-contain object-center"
-            />
-          </div>
-          <p className="mt-4 max-w-4xl text-base leading-7 text-slate-600">Built from real hiring decisions.</p>
-          <div className="mt-4">
-            <a
-              href="/mads"
-              className="inline-flex rounded-lg border border-slate-300 px-5 py-3 text-sm font-semibold text-slate-700 transition hover:border-slate-400"
-            >
-              About the Founder
-            </a>
-          </div>
-        </section>
-
-        <section className="sticky top-3 z-20 mb-6 rounded-2xl border border-slate-200 bg-white/95 px-4 py-3 shadow-sm backdrop-blur sm:px-6">
-          <div className="flex flex-wrap items-center gap-2 sm:gap-3">
-            <span className="text-xs font-semibold uppercase tracking-wide text-slate-500">Go to:</span>
-            <a
-              href="/candidates"
-              className="rounded-full border border-sky-200 bg-sky-50 px-3 py-1.5 text-xs font-semibold text-sky-800 transition hover:border-sky-300"
-            >
-              Candidate Support
-            </a>
-            <a
-              href="/advisory"
-              className="rounded-full border border-emerald-200 bg-emerald-50 px-3 py-1.5 text-xs font-semibold text-emerald-800 transition hover:border-emerald-300"
-            >
-              Advisory Services
-            </a>
-            <a
-              href="/candidates#review"
-              className="rounded-full border border-slate-300 px-3 py-1.5 text-xs font-semibold text-slate-700 transition hover:border-slate-400"
-            >
-              Resume Tool
-            </a>
-          </div>
-        </section>
-
-        <section className="rounded-2xl bg-white p-8 shadow-sm ring-1 ring-slate-200 sm:p-10">
-          <SectionTitle>Choose your path</SectionTitle>
-          <p className="mt-3 text-sm leading-6 text-slate-600">
-            Start here: pick the experience that fits you best.
-          </p>
-          <div className="mt-6 grid gap-4 md:grid-cols-2">
-            <a
-              href="/advisory"
-              className="rounded-xl border border-emerald-200 bg-emerald-50/40 p-5 transition hover:border-emerald-300"
-            >
-              <p className="text-xs font-semibold uppercase tracking-wide text-emerald-700">For businesses</p>
-              <h3 className="mt-2 text-lg font-semibold text-slate-900">Startup Hiring Advisory</h3>
-              <p className="mt-2 text-sm leading-6 text-slate-600">
-                Strategic advisory for founders and leaders building recruiting foundations from zero.
+        <section className="mb-6 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+          <div className="grid gap-0 lg:grid-cols-[1.2fr_1fr]">
+            <div className="border-b border-slate-200 p-5 sm:p-7 lg:border-b-0 lg:border-r">
+              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-500">The Mads Hatter</p>
+              <h1 className="mt-3 text-3xl font-semibold leading-tight tracking-tight text-slate-900 sm:text-4xl">
+                Built from real hiring decisions.
+              </h1>
+              <p className="mt-4 max-w-2xl text-sm leading-7 text-slate-600">
+                Candidate support and startup advisory shaped by how hiring decisions are actually made in fast-growth
+                environments.
               </p>
-              <p className="mt-3 text-sm font-medium text-emerald-800">View advisory services</p>
-            </a>
-            <a
-              href="/candidates"
-              className="rounded-xl border border-sky-200 bg-sky-50/40 p-5 transition hover:border-sky-300"
-            >
-              <p className="text-xs font-semibold uppercase tracking-wide text-sky-700">For candidates</p>
-              <h3 className="mt-2 text-lg font-semibold text-slate-900">Resume + Interview Support</h3>
-              <p className="mt-2 text-sm leading-6 text-slate-600">
-                One experience for resume review, interview prep, and offer negotiation support.
-              </p>
-              <p className="mt-3 text-sm font-medium text-sky-800">Get candidate support</p>
-            </a>
-          </div>
-        </section>
-
-        <section className="mt-6 rounded-2xl bg-white p-6 shadow-sm ring-1 ring-slate-200 sm:p-8">
-          <div className="grid gap-3 sm:grid-cols-3">
-            {PROOF_METRICS.map((metric) => (
-              <div key={metric.label} className="rounded-xl border border-slate-200 bg-slate-50 p-4">
-                <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">{metric.label}</p>
-                <p className="mt-1 text-2xl font-bold text-slate-900">{metric.value}</p>
+              <div className="mt-6 flex flex-wrap gap-3">
+                <a
+                  href="/candidates"
+                  className="rounded-lg bg-slate-900 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-slate-800"
+                >
+                  Candidate Support
+                </a>
+                <a
+                  href="/advisory"
+                  className="rounded-lg border border-slate-300 px-5 py-2.5 text-sm font-semibold text-slate-700 transition hover:border-slate-400"
+                >
+                  Advisory Services
+                </a>
               </div>
+            </div>
+
+            <div className="flex flex-col justify-between bg-slate-50/60 p-5 sm:p-7">
+              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-500">Founder</p>
+              <p className="mt-3 text-sm leading-7 text-slate-700">
+                Founder &amp; CEO Mads Rodriguez has helped scale teams at Sui, Polygon, Robinhood, DoorDash, and Yelp
+                and advises founders on building talent systems from zero.
+              </p>
+              <a
+                href="/mads"
+                className="mt-6 inline-flex w-fit rounded-lg border border-slate-300 px-4 py-2.5 text-sm font-semibold text-slate-700 transition hover:border-slate-400"
+              >
+                About the Founder
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section className="mb-6 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8">
+          <p className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-500">What You Can Use This For</p>
+          <div className="mt-5 grid gap-4 md:grid-cols-3">
+            {FEATURES.map((feature) => (
+              <a
+                key={feature.title}
+                href={feature.href}
+                className={`group rounded-lg border-l-4 border-slate-200 bg-slate-50/50 p-4 transition hover:bg-white ${feature.accent}`}
+              >
+                <p className="text-base font-semibold text-slate-900 group-hover:underline">{feature.title}</p>
+                <p className="mt-2 text-sm leading-6 text-slate-600">{feature.description}</p>
+              </a>
+            ))}
+          </div>
+          <div className="mt-5 border-t border-slate-200 pt-5">
+            <p className="text-center text-xs uppercase tracking-wide text-slate-500">
+              Trained on real hiring decisions from teams at
+            </p>
+            <p className="mt-2 text-center text-base tracking-wide text-slate-700">
+              Sui • Polygon • Robinhood • DoorDash • Yelp
+            </p>
+          </div>
+        </section>
+
+        <section className="mb-6 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8">
+          <p className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-500">Proof</p>
+          <div className="mt-4 flex flex-wrap gap-x-8 gap-y-3">
+            {PROOF_METRICS.map((metric) => (
+              <p key={metric} className="text-sm font-medium text-slate-700">
+                {metric}
+              </p>
             ))}
           </div>
         </section>
