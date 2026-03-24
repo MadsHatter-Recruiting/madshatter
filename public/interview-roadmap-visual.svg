@@ -1,0 +1,17 @@
+<svg width="1200" height="760" viewBox="0 0 1200 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="760" rx="28" fill="#F8FAFC"/>
+  <rect x="80" y="90" width="1040" height="580" rx="24" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2"/>
+  <path d="M140 560C260 560 290 480 390 480C500 480 520 380 640 380C760 380 790 270 910 270C1000 270 1050 220 1080 170" stroke="#0F172A" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="140" cy="560" r="16" fill="#0F172A"/>
+  <circle cx="390" cy="480" r="16" fill="#0F172A"/>
+  <circle cx="640" cy="380" r="16" fill="#0F172A"/>
+  <circle cx="910" cy="270" r="16" fill="#0F172A"/>
+  <circle cx="1080" cy="170" r="16" fill="#0F172A"/>
+  <g fill="#334155" font-family="ui-sans-serif, system-ui" font-size="26" font-weight="600">
+    <text x="110" y="620">Resume</text>
+    <text x="332" y="540">Interview</text>
+    <text x="594" y="440">Debrief</text>
+    <text x="870" y="330">Offer</text>
+    <text x="1018" y="130">Close</text>
+  </g>
+</svg>
