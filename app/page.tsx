@@ -23,6 +23,12 @@ const FEATURES = [
     description: "Understand compensation mechanics and negotiate with clarity while preserving trust.",
     accent: "border-amber-300",
   },
+  {
+    title: "Advisory",
+    href: "/advisory",
+    description: "Partner on hiring strategy, recruiting systems, and org design built to scale from zero.",
+    accent: "border-slate-400",
+  },
 ] as const;
 
 export default function HomePage() {
@@ -163,7 +169,7 @@ export default function HomePage() {
 
         <section className="mb-6 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8">
           <p className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-500">Signature Services</p>
-          <div className="mt-5 grid gap-4 md:grid-cols-3">
+          <div className="mt-5 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
             {FEATURES.map((feature) => (
               <a
                 key={feature.title}

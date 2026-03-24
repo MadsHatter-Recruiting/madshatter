@@ -64,87 +64,103 @@ export default function MadsPage() {
           </div>
         </header>
 
-        <section className="rounded-2xl bg-white p-8 shadow-sm ring-1 ring-slate-200 sm:p-10">
-          <div className="flex flex-wrap items-center gap-4">
-            <img
-              src={MADS_PHOTO_URL}
-              alt="Mads Rodriguez"
-              className="h-20 w-20 rounded-full object-cover ring-1 ring-slate-200"
-            />
-            <div>
-              <p className="text-sm font-semibold uppercase tracking-widest text-sky-600">About Mads</p>
-              <h1 className="mt-2 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">Mads Rodriguez</h1>
-            </div>
-          </div>
-          <div className="mt-6 max-w-4xl space-y-7 text-base leading-7 text-slate-700">
-            <div className="space-y-4">
-              <p className="text-xl font-semibold leading-8 text-slate-900">See hiring the way insiders do.</p>
-              <p>
-                Most candidates never get a clear look at how hiring decisions are actually made. The Mads Hatter was
-                built to change that.
-              </p>
-              <p>
-                This tool reviews your resume through the same lens recruiters and hiring managers use every day:
-                helping you understand what stands out, what raises questions, and how to strengthen your story before
-                you enter the process.
-              </p>
-              <p>Built from real hiring environments, not resume theory.</p>
+        <section className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+          <div className="grid gap-0 lg:grid-cols-[1.15fr_1fr]">
+            <div className="border-b border-slate-200 p-6 sm:p-8 lg:border-b-0 lg:border-r">
+              <div className="flex flex-wrap items-center gap-4">
+                <img
+                  src={MADS_PHOTO_URL}
+                  alt="Mads Rodriguez"
+                  className="h-20 w-20 rounded-full object-cover ring-1 ring-slate-200"
+                />
+                <div>
+                  <p className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-500">About Mads</p>
+                  <h1 className="mt-2 text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl">
+                    Mads Rodriguez
+                  </h1>
+                </div>
+              </div>
+              <div className="mt-6 max-w-3xl space-y-4 text-[15px] leading-7 text-slate-700">
+                <p className="text-xl font-semibold leading-8 text-slate-900">See hiring the way insiders do.</p>
+                <p>
+                  Most candidates never get a clear look at how hiring decisions are actually made. The Mads Hatter
+                  was built to change that.
+                </p>
+                <p>
+                  This tool reviews your resume through the same lens recruiters and hiring managers use every day:
+                  helping you understand what stands out, what raises questions, and how to strengthen your story
+                  before you enter the process.
+                </p>
+                <p>Built from real hiring environments, not resume theory.</p>
+              </div>
             </div>
 
-            <div>
+            <div className="relative bg-slate-950 p-6 text-white sm:p-8">
+              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-300">Founder + CEO</p>
+              <p className="mt-4 text-sm leading-7 text-slate-100">
+                Madeline (Mads) Rodriguez has spent her career helping teams scale across high-growth companies and
+                advising founders on building talent systems with speed, quality, and long-term signal.
+              </p>
+              <p className="mt-4 text-sm leading-7 text-slate-100">
+                Experience spans Sui, Polygon, Robinhood, DoorDash, and Yelp, plus advisory work with Instawork,
+                GoPuff, Habitat Company, Swoon, Wonders, Eventbrite, and Exact Data.
+              </p>
+              <a
+                href={LINKEDIN_URL}
+                target="_blank"
+                rel="noreferrer"
+                className="mt-6 inline-flex rounded-lg border border-white/30 px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-white/10"
+              >
+                LinkedIn
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section className="mt-6 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8">
+          <div className="grid gap-6 md:grid-cols-2">
+            <article className="rounded-xl border border-slate-200 bg-slate-50/70 p-5">
               <h2 className="text-lg font-semibold text-slate-900">Why This Exists</h2>
-              <div className="mt-2 space-y-4">
+              <div className="mt-3 space-y-3 text-sm leading-7 text-slate-700">
                 <p>
                   After years inside hiring teams, one thing became clear: many talented people are navigating the job
                   search without visibility into how decisions are actually made.
                 </p>
                 <p>
                   The Mads Hatter brings together patterns from real hiring environments, from early-career roles to
-                  executive searches, so candidates can better understand how their experience will be interpreted
-                  inside the room.
-                </p>
-                <p>
-                  The goal is simple: help people present their work, their story, and their value with more clarity
-                  and confidence.
+                  executive searches, so candidates can better understand how their experience is interpreted inside
+                  the room.
                 </p>
               </div>
-            </div>
+            </article>
 
-            <div>
+            <article className="rounded-xl border border-slate-200 bg-slate-50/70 p-5">
               <h2 className="text-lg font-semibold text-slate-900">Operator + Advisor</h2>
-              <div className="mt-2 space-y-4">
+              <div className="mt-3 space-y-3 text-sm leading-7 text-slate-700">
                 <p>
-                  Madeline (Mads) Rodriguez has spent her career inside high-growth companies helping teams scale and
-                  making hiring decisions across roles from entry-level talent to executive leadership.
-                </p>
-                <p>She is the Founder &amp; CEO of The Mads Hatter.</p>
-                <p>
-                  Her experience spans Sui, Polygon, Robinhood, DoorDash, and Yelp, and includes advisory work with
-                  organizations such as Instawork, GoPuff, Habitat Company, and Swoon, alongside thousands of resume
-                  reviews, interviews, and hiring debriefs where final decisions are made.
+                  She is the Founder &amp; CEO of The Mads Hatter and has participated in thousands of resume reviews,
+                  interviews, and hiring debriefs where final decisions are made.
                 </p>
                 <p>
-                  Beyond candidate coaching, she advises founders and executive teams on organizational growth, turning
-                  business priorities into hiring strategy, role calibration, and recruiting infrastructure that scales.
+                  Beyond candidate support, she advises founders and executive teams on organizational growth, role
+                  calibration, and recruiting infrastructure that scales.
                 </p>
               </div>
-            </div>
-
+            </article>
           </div>
+
           <div className="mt-8 flex flex-wrap gap-3">
-            <a
-              href={LINKEDIN_URL}
-              target="_blank"
-              rel="noreferrer"
-              className="rounded-lg border border-slate-300 px-5 py-3 text-sm font-semibold text-slate-700"
-            >
-              LinkedIn
-            </a>
             <a
               href="/"
               className="rounded-lg border border-slate-300 px-5 py-3 text-sm font-semibold text-slate-700"
             >
               Back to the tool
+            </a>
+            <a
+              href="/advisory"
+              className="rounded-lg border border-slate-300 px-5 py-3 text-sm font-semibold text-slate-700"
+            >
+              Advisory Services
             </a>
           </div>
         </section>
