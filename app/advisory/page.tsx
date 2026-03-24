@@ -1,9 +1,21 @@
 
-const SUPPORTED_ORGS = ["Wonders", "DoorDash", "Eventbrite", "Exact Data"] as const;
+const SUPPORTED_ORGS = [
+  "Wonders",
+  "DoorDash",
+  "Eventbrite",
+  "Exact Data",
+  "Instawork",
+  "GoPuff",
+  "Habitat Company",
+  "Swoon",
+] as const;
 
 export default function AdvisoryPage() {
   return (
-    <main id="top" className="pb-20 pt-6 sm:pb-24 sm:pt-8">
+    <main
+      id="top"
+      className="bg-[radial-gradient(circle_at_0%_-10%,#dbeafe,transparent_36%),radial-gradient(circle_at_96%_2%,#d1fae5,transparent_40%),linear-gradient(to_bottom,#f8fafc,#f8fafc)] pb-20 pt-6 sm:pb-24 sm:pt-8"
+    >
       <div className="section-shell">
         <header className="mb-6 rounded-2xl bg-white px-5 py-4 shadow-sm ring-1 ring-slate-200 sm:px-6">
           <div className="flex items-center justify-between gap-4">

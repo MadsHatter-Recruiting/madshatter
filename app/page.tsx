@@ -2,7 +2,7 @@
 
 const LINKEDIN_URL = "https://www.linkedin.com/in/madelinerodz/";
 
-const PROOF_METRICS = ["8+ years advisory", "25% faster time-to-hire", "+30% qualified applicant lift"] as const;
+const PROOF_METRICS = ["0→1 recruiting systems", "25% faster time-to-hire", "+30% qualified applicant lift"] as const;
 
 const FEATURES = [
   {
@@ -148,17 +148,9 @@ export default function HomePage() {
               <div className="pointer-events-none absolute -right-16 -top-16 h-44 w-44 rounded-full bg-sky-300/25 blur-3xl" />
               <p className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-300">Founder Lens</p>
               <p className="mt-4 max-w-sm text-sm leading-7 text-slate-100">
-                Founder &amp; CEO Mads Rodriguez has helped scale teams at Sui, Polygon, Robinhood, DoorDash, and Yelp and
-                advises founders on building talent systems from zero.
+                Founder &amp; CEO Mads Rodriguez has helped scale teams at Sui, Polygon, Robinhood, DoorDash, and Yelp,
+                and has advised organizations including Instawork, GoPuff, Habitat Company, and Swoon.
               </p>
-              <div className="motion-float mt-6 rounded-xl border border-white/20 bg-white/10 p-4 backdrop-blur">
-                <p className="text-xs uppercase tracking-[0.14em] text-slate-300">Hiring Signal Scan</p>
-                <ul className="mt-2 space-y-1 text-sm text-slate-100">
-                  <li>• Title alignment and role seniority fit</li>
-                  <li>• Bullet impact, ownership, and outcomes</li>
-                  <li>• Risk flags before interview loop</li>
-                </ul>
-              </div>
               <a
                 href="/mads"
                 className="mt-6 inline-flex w-fit rounded-lg border border-white/30 px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-white/10"
@@ -170,7 +162,7 @@ export default function HomePage() {
         </section>
 
         <section className="mb-6 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8">
-          <p className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-500">What You Can Use This For</p>
+          <p className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-500">Signature Services</p>
           <div className="mt-5 grid gap-4 md:grid-cols-3">
             {FEATURES.map((feature) => (
               <a
@@ -188,7 +180,7 @@ export default function HomePage() {
               Trained on real hiring decisions from teams at
             </p>
             <p className="mt-2 text-center text-base tracking-wide text-slate-700">
-              Sui • Polygon • Robinhood • DoorDash • Yelp
+              Sui • Polygon • Robinhood • DoorDash • Yelp • Instawork • GoPuff • Habitat Company • Swoon
             </p>
           </div>
         </section>
@@ -200,7 +192,7 @@ export default function HomePage() {
               href="/candidates"
               className="rounded-xl border border-slate-200 bg-slate-50/60 p-5 transition hover:-translate-y-0.5 hover:border-slate-300"
             >
-              <p className="text-xs font-semibold uppercase tracking-[0.14em] text-slate-500">01 For Candidates</p>
+              <p className="text-xs font-semibold uppercase tracking-[0.14em] text-slate-500">For Candidates</p>
               <p className="mt-2 text-lg font-semibold text-slate-900">Resume + interview support in one flow</p>
               <p className="mt-2 text-sm leading-6 text-slate-600">
                 Upload a resume, run recruiter-style analysis, and get practical steps that improve interview odds.
@@ -210,7 +202,7 @@ export default function HomePage() {
               href="/advisory"
               className="rounded-xl border border-slate-200 bg-slate-50/60 p-5 transition hover:-translate-y-0.5 hover:border-slate-300"
             >
-              <p className="text-xs font-semibold uppercase tracking-[0.14em] text-slate-500">02 For Founders</p>
+              <p className="text-xs font-semibold uppercase tracking-[0.14em] text-slate-500">For Founders</p>
               <p className="mt-2 text-lg font-semibold text-slate-900">Advisory to build hiring from zero</p>
               <p className="mt-2 text-sm leading-6 text-slate-600">
                 Translate business priorities into hiring systems, role calibration, and scalable execution.
