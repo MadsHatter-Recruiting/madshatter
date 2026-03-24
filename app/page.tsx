@@ -157,13 +157,6 @@ export default function HomePage() {
                 Founder &amp; CEO Mads Rodriguez has helped scale teams at Sui, Polygon, Robinhood, DoorDash, and Yelp,
                 and has advised organizations including Instawork, GoPuff, Habitat Company, and Swoon.
               </p>
-              <div className="mt-6 overflow-hidden rounded-xl border border-white/15 bg-slate-900/70">
-                <img
-                  src="/talent-map-visual.svg"
-                  alt="Talent map visual"
-                  className="h-40 w-full object-cover opacity-80 sm:h-48"
-                />
-              </div>
               <a
                 href="/mads"
                 className="mt-6 inline-flex w-fit rounded-lg border border-white/30 px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-white/10"

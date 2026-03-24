@@ -74,14 +74,6 @@ export default function CandidatesPage() {
             </div>
           </div>
 
-          <div className="mt-6 overflow-hidden rounded-xl border border-slate-200 bg-slate-50">
-            <img
-              src="/interview-roadmap-visual.svg"
-              alt="Roadmap from resume to offer"
-              className="h-44 w-full object-cover sm:h-56"
-            />
-          </div>
-
           <div className="mt-8 grid gap-4 md:grid-cols-3">
             <a href="#review" className="rounded-xl border border-sky-200 bg-sky-50/40 p-5 transition hover:border-sky-300">
               <h2 className="text-base font-semibold text-slate-900">Resume Review Tool</h2>
