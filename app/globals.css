@@ -14,6 +14,20 @@ body {
   @apply mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8;
 }
 
+@keyframes float-slow {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+}
+
+.motion-float {
+  animation: float-slow 6s ease-in-out infinite;
+}
+
 @keyframes ticker-scroll {
   0% {
     transform: translateX(0);
@@ -35,6 +49,10 @@ body {
 }
 
 @media (prefers-reduced-motion: reduce) {
+  .motion-float {
+    animation: none;
+  }
+
   .ticker-scroll {
     animation: none;
     transform: none;
