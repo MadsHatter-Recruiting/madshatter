@@ -2,32 +2,32 @@
 
 const LINKEDIN_URL = "https://www.linkedin.com/in/madelinerodz/";
 
-const PROOF_METRICS = ["0→1 recruiting systems", "25% faster time-to-hire", "+30% qualified applicant lift"] as const;
+const CREDIBILITY_POINTS = [
+  "0→1 recruiting systems",
+  "Executive and founder advisory",
+  "Candidate strategy and negotiation",
+] as const;
 
-const FEATURES = [
+const PRACTICE_AREAS = [
   {
-    title: "Resume Review",
+    title: "Candidate Strategy",
     href: "/candidates#review",
-    description: "See how your experience reads in a real hiring scan, and what needs tightening before interviews.",
-    accent: "border-sky-300",
+    description: "Resume positioning, recruiter-style review, and practical edits tied to interview outcomes.",
   },
   {
     title: "Interview Prep",
     href: "/interview",
-    description: "Prepare for high-signal questions, delivery, and debrief criteria used by hiring teams.",
-    accent: "border-emerald-300",
+    description: "Preparation built around signal, hiring debrief patterns, and delivery under pressure.",
   },
   {
     title: "Offer Negotiation",
     href: "/negotiation",
-    description: "Understand compensation mechanics and negotiate with clarity while preserving trust.",
-    accent: "border-amber-300",
+    description: "Compensation framing, leverage strategy, and negotiation support without losing trust.",
   },
   {
-    title: "Advisory",
+    title: "Talent Advisory",
     href: "/advisory",
-    description: "Partner on hiring strategy, recruiting systems, and org design built to scale from zero.",
-    accent: "border-slate-400",
+    description: "Hiring strategy, recruiting systems, and org design for teams building from zero.",
   },
 ] as const;
 
@@ -115,75 +115,93 @@ export default function HomePage() {
         </header>
 
         <section className="mb-6 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
-          <div className="grid gap-0 lg:grid-cols-[1.15fr_1fr]">
-            <div className="border-b border-slate-200 p-5 sm:p-8 lg:border-b-0 lg:border-r">
+          <div className="grid gap-0 lg:grid-cols-[1.2fr_0.95fr]">
+            <div className="border-b border-slate-200 p-6 sm:p-10 lg:border-b-0 lg:border-r">
               <p className="inline-flex rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.16em] text-slate-600">
                 The Mads Hatter
               </p>
-              <h1 className="mt-4 text-3xl font-semibold leading-tight tracking-tight text-slate-900 sm:text-5xl">
-                Built from real hiring decisions.
+              <h1 className="mt-4 max-w-3xl text-3xl font-semibold leading-tight tracking-tight text-slate-900 sm:text-5xl">
+                Talent advisory and candidate strategy built from real hiring decisions.
               </h1>
-              <p className="mt-4 max-w-2xl text-[15px] leading-7 text-slate-600">
-                Candidate support and startup advisory shaped by how hiring decisions are actually made in fast-growth
-                environments.
+              <p className="mt-5 max-w-2xl text-[15px] leading-7 text-slate-600">
+                Mads Hatter helps companies build stronger hiring systems and helps candidates position themselves with
+                more clarity, leverage, and credibility.
               </p>
-              <div className="mt-6 flex flex-wrap gap-3">
-                <a
-                  href="/candidates"
-                  className="rounded-lg bg-slate-900 px-5 py-2.5 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-slate-800"
-                >
-                  Candidate Support
-                </a>
+              <div className="mt-7 flex flex-wrap gap-3">
                 <a
                   href="/advisory"
+                  className="rounded-lg bg-slate-900 px-5 py-2.5 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-slate-800"
+                >
+                  Explore Advisory
+                </a>
+                <a
+                  href="/candidates"
                   className="rounded-lg border border-slate-300 px-5 py-2.5 text-sm font-semibold text-slate-700 transition hover:-translate-y-0.5 hover:border-slate-400"
                 >
-                  Advisory Services
+                  Candidate Services
                 </a>
               </div>
-              <div className="mt-6 grid gap-3 sm:grid-cols-3">
-                {PROOF_METRICS.map((metric) => (
-                  <div key={metric} className="rounded-lg border border-slate-200 bg-slate-50 px-3 py-2">
-                    <p className="text-xs font-medium text-slate-700">{metric}</p>
-                  </div>
+              <div className="mt-8 grid gap-4 border-t border-slate-200 pt-6 sm:grid-cols-3">
+                {CREDIBILITY_POINTS.map((point) => (
+                  <p key={point} className="text-sm font-medium text-slate-700">
+                    {point}
+                  </p>
                 ))}
               </div>
             </div>
 
-            <div className="relative bg-slate-950 p-5 text-white sm:p-8">
+            <div className="relative bg-slate-950 p-6 text-white sm:p-10">
               <div className="pointer-events-none absolute -right-16 -top-16 h-44 w-44 rounded-full bg-sky-300/25 blur-3xl" />
-              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-300">Founder Lens</p>
-              <p className="mt-4 max-w-sm text-sm leading-7 text-slate-100">
-                Founder &amp; CEO Mads Rodriguez has helped scale teams at Sui, Polygon, Robinhood, DoorDash, and Yelp,
-                and has advised organizations including Instawork, GoPuff, Habitat Company, and Swoon.
-              </p>
-              <a
-                href="/mads"
-                className="mt-6 inline-flex w-fit rounded-lg border border-white/30 px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-white/10"
-              >
-                About the Founder
-              </a>
+              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-300">Practice</p>
+              <div className="mt-4 space-y-5">
+                <div className="border-b border-white/10 pb-4">
+                  <p className="text-sm font-semibold text-white">Advisory</p>
+                  <p className="mt-2 text-sm leading-7 text-slate-200">
+                    Founder partnership on hiring strategy, recruiting operations, and organizational buildout.
+                  </p>
+                </div>
+                <div className="border-b border-white/10 pb-4">
+                  <p className="text-sm font-semibold text-white">Candidate Services</p>
+                  <p className="mt-2 text-sm leading-7 text-slate-200">
+                    Direct support across resume review, interview preparation, and offer negotiation.
+                  </p>
+                </div>
+                <div>
+                  <p className="text-sm font-semibold text-white">Operating Context</p>
+                  <p className="mt-2 text-sm leading-7 text-slate-200">
+                    Experience across high-growth technology, leadership hiring, and 0→1 recruiting buildouts.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </section>
 
         <section className="mb-6 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8">
-          <p className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-500">Signature Services</p>
-          <div className="mt-5 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
-            {FEATURES.map((feature) => (
+          <div className="flex flex-col gap-3 border-b border-slate-200 pb-5 sm:flex-row sm:items-end sm:justify-between">
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-500">Practice Areas</p>
+              <h2 className="mt-2 text-2xl font-semibold tracking-tight text-slate-900">Focused support across both sides of hiring</h2>
+            </div>
+            <p className="max-w-xl text-sm leading-6 text-slate-600">
+              The firm is structured around a small number of focused engagements rather than broad generalist services.
+            </p>
+          </div>
+          <div className="mt-6 grid gap-4 md:grid-cols-2">
+            {PRACTICE_AREAS.map((feature) => (
               <a
                 key={feature.title}
                 href={feature.href}
-                className={`group rounded-lg border-l-4 border-slate-200 bg-slate-50/50 p-4 transition hover:-translate-y-0.5 hover:bg-white ${feature.accent}`}
+                className="group rounded-xl border border-slate-200 bg-slate-50/40 p-5 transition hover:-translate-y-0.5 hover:border-slate-300 hover:bg-white"
               >
-                <p className="text-base font-semibold text-slate-900 group-hover:underline">{feature.title}</p>
-                <p className="mt-2 text-sm leading-6 text-slate-600">{feature.description}</p>
+                <p className="text-base font-semibold text-slate-900">{feature.title}</p>
+                <p className="mt-3 text-sm leading-6 text-slate-600">{feature.description}</p>
               </a>
             ))}
           </div>
           <div className="mt-5 border-t border-slate-200 pt-5">
             <p className="text-center text-xs uppercase tracking-wide text-slate-500">
-              Trained on real hiring decisions from teams at
+              Experience across high-growth teams including
             </p>
             <p className="mt-2 text-center text-base tracking-wide text-slate-700">
               Sui • Polygon • Robinhood • DoorDash • Yelp • Instawork • GoPuff • Habitat Company • Swoon
@@ -192,26 +210,39 @@ export default function HomePage() {
         </section>
 
         <section className="mb-6 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8">
-          <p className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-500">Choose Your Path</p>
-          <div className="mt-5 grid gap-4 md:grid-cols-2">
+          <div className="flex flex-col gap-3 border-b border-slate-200 pb-5 sm:flex-row sm:items-end sm:justify-between">
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-500">Engagement Paths</p>
+              <h2 className="mt-2 text-2xl font-semibold tracking-tight text-slate-900">Start with the context that fits you</h2>
+            </div>
+            <a
+              href="/mads"
+              className="text-sm font-semibold text-slate-600 underline-offset-4 transition hover:text-slate-900 hover:underline"
+            >
+              About the Founder
+            </a>
+          </div>
+          <div className="mt-6 grid gap-4 md:grid-cols-2">
             <a
               href="/candidates"
-              className="rounded-xl border border-slate-200 bg-slate-50/60 p-5 transition hover:-translate-y-0.5 hover:border-slate-300"
+              className="rounded-xl border border-slate-200 bg-white p-6 transition hover:-translate-y-0.5 hover:border-slate-300"
             >
-              <p className="text-xs font-semibold uppercase tracking-[0.14em] text-slate-500">For Candidates</p>
-              <p className="mt-2 text-lg font-semibold text-slate-900">Resume + interview support in one flow</p>
-              <p className="mt-2 text-sm leading-6 text-slate-600">
-                Upload a resume, run recruiter-style analysis, and get practical steps that improve interview odds.
+              <p className="text-xs font-semibold uppercase tracking-[0.14em] text-slate-500">Candidates</p>
+              <p className="mt-2 text-lg font-semibold text-slate-900">Positioning, preparation, and negotiation</p>
+              <p className="mt-3 text-sm leading-6 text-slate-600">
+                Structured support for professionals who want sharper materials, stronger interview performance, and
+                better offer outcomes.
               </p>
             </a>
             <a
               href="/advisory"
-              className="rounded-xl border border-slate-200 bg-slate-50/60 p-5 transition hover:-translate-y-0.5 hover:border-slate-300"
+              className="rounded-xl border border-slate-200 bg-white p-6 transition hover:-translate-y-0.5 hover:border-slate-300"
             >
-              <p className="text-xs font-semibold uppercase tracking-[0.14em] text-slate-500">For Founders</p>
-              <p className="mt-2 text-lg font-semibold text-slate-900">Advisory to build hiring from zero</p>
-              <p className="mt-2 text-sm leading-6 text-slate-600">
-                Translate business priorities into hiring systems, role calibration, and scalable execution.
+              <p className="text-xs font-semibold uppercase tracking-[0.14em] text-slate-500">Companies</p>
+              <p className="mt-2 text-lg font-semibold text-slate-900">Hiring systems, search strategy, and org design</p>
+              <p className="mt-3 text-sm leading-6 text-slate-600">
+                Advisory for founders and leadership teams building recruiting infrastructure and making higher-quality
+                hiring decisions.
               </p>
             </a>
           </div>
