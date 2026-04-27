@@ -38,7 +38,7 @@ export default function AdvisoryPage() {
                 Pricing
               </a>
               <a href="/mads" className="transition hover:text-slate-900">
-                About Mads
+                About Us
               </a>
             </nav>
           </div>

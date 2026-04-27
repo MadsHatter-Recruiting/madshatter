@@ -29,7 +29,7 @@ export default function CandidatesPage() {
                 Pricing
               </a>
               <a href="/mads" className="transition hover:text-slate-900">
-                About Mads
+                About Us
               </a>
             </nav>
           </div>

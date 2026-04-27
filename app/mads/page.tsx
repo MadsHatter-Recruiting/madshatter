@@ -1,5 +1,4 @@
 const LINKEDIN_URL = "https://www.linkedin.com/company/113022676/";
-const MADS_PHOTO_URL = "/mads-photo.jpg";
 
 export default function MadsPage() {
   return (
@@ -32,7 +31,7 @@ export default function MadsPage() {
                 Pricing
               </a>
               <a href="/mads" className="transition hover:text-slate-900">
-                About Mads
+                About Us
               </a>
             </nav>
 
@@ -57,7 +56,7 @@ export default function MadsPage() {
                   Pricing
                 </a>
                 <a href="/mads" className="block rounded-md px-3 py-2 text-sm text-slate-700 hover:bg-slate-50">
-                  About Mads
+                  About Us
                 </a>
               </nav>
             </details>
@@ -67,19 +66,10 @@ export default function MadsPage() {
         <section className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
           <div className="grid gap-0 lg:grid-cols-[1.15fr_1fr]">
             <div className="border-b border-slate-200 p-6 sm:p-8 lg:border-b-0 lg:border-r">
-              <div className="flex flex-wrap items-center gap-4">
-                <img
-                  src={MADS_PHOTO_URL}
-                  alt="Mads Rodriguez"
-                  className="h-20 w-20 rounded-full object-cover ring-1 ring-slate-200"
-                />
-                <div>
-                  <p className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-500">About Mads</p>
-                  <h1 className="mt-2 text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl">
-                    Mads Rodriguez
-                  </h1>
-                </div>
-              </div>
+              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-500">About Us</p>
+              <h1 className="mt-2 text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl">
+                Mads Hatter
+              </h1>
               <div className="mt-6 max-w-3xl space-y-4 text-[15px] leading-7 text-slate-700">
                 <p className="text-xl font-semibold leading-8 text-slate-900">See hiring the way insiders do.</p>
                 <p>
@@ -96,14 +86,14 @@ export default function MadsPage() {
             </div>
 
             <div className="relative bg-slate-950 p-6 text-white sm:p-8">
-              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-300">Founder + CEO</p>
+              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-300">Service Focus</p>
               <p className="mt-4 text-sm leading-7 text-slate-100">
-                Madeline (Mads) Rodriguez has spent her career helping teams scale across high-growth companies and
-                advising founders on building talent systems with speed, quality, and long-term signal.
+                Mads Hatter supports both sides of the hiring process: companies building stronger recruiting systems
+                and candidates preparing for higher-stakes career decisions.
               </p>
               <p className="mt-4 text-sm leading-7 text-slate-100">
-                Experience spans Sui, Polygon, Robinhood, DoorDash, and Yelp, plus advisory work with Instawork,
-                GoPuff, Habitat Company, Swoon, Wonders, Eventbrite, and Exact Data.
+                The work is informed by real hiring environments across high-growth technology, executive search,
+                interview debriefs, recruiting operations, and offer strategy.
               </p>
               <a
                 href={LINKEDIN_URL}
@@ -138,12 +128,12 @@ export default function MadsPage() {
               <h2 className="text-lg font-semibold text-slate-900">Operator + Advisor</h2>
               <div className="mt-3 space-y-3 text-sm leading-7 text-slate-700">
                 <p>
-                  She is the Founder &amp; CEO of The Mads Hatter and has participated in thousands of resume reviews,
-                  interviews, and hiring debriefs where final decisions are made.
+                  The service is designed to bring more structure, signal, and clarity to both hiring strategy and
+                  candidate decision-making.
                 </p>
                 <p>
-                  Beyond candidate support, she advises founders and executive teams on organizational growth, role
-                  calibration, and recruiting infrastructure that scales.
+                  Beyond resume review, the work extends into interview preparation, offer negotiation, recruiting
+                  infrastructure, and organizational advisory.
                 </p>
               </div>
             </article>

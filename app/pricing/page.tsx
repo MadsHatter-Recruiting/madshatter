@@ -57,7 +57,7 @@ export default function PricingPage() {
                 Pricing
               </a>
               <a href="/mads" className="transition hover:text-slate-900">
-                About Mads
+                About Us
               </a>
             </nav>
 
@@ -82,7 +82,7 @@ export default function PricingPage() {
                   Pricing
                 </a>
                 <a href="/mads" className="block rounded-md px-3 py-2 text-sm text-slate-700 hover:bg-slate-50">
-                  About Mads
+                  About Us
                 </a>
               </nav>
             </details>
