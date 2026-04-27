@@ -70,7 +70,7 @@ export default function HomePage() {
                 Pricing
               </a>
               <a href="/mads" className="transition hover:text-slate-900">
-                About Mads
+                About Us
               </a>
             </nav>
 
@@ -107,7 +107,7 @@ export default function HomePage() {
                   Pricing
                 </a>
                 <a href="/mads" className="block rounded-md px-3 py-2 text-sm text-slate-700 hover:bg-slate-50">
-                  About Mads
+                  About Us
                 </a>
               </nav>
             </details>
@@ -157,7 +157,7 @@ export default function HomePage() {
                 <div className="border-b border-white/10 pb-4">
                   <p className="text-sm font-semibold text-white">Advisory</p>
                   <p className="mt-2 text-sm leading-7 text-slate-200">
-                    Founder partnership on hiring strategy, recruiting operations, and organizational buildout.
+                    Partnership on hiring strategy, recruiting operations, and organizational buildout.
                   </p>
                 </div>
                 <div className="border-b border-white/10 pb-4">
@@ -215,12 +215,6 @@ export default function HomePage() {
               <p className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-500">Engagement Paths</p>
               <h2 className="mt-2 text-2xl font-semibold tracking-tight text-slate-900">Start with the context that fits you</h2>
             </div>
-            <a
-              href="/mads"
-              className="text-sm font-semibold text-slate-600 underline-offset-4 transition hover:text-slate-900 hover:underline"
-            >
-              About the Founder
-            </a>
           </div>
           <div className="mt-6 grid gap-4 md:grid-cols-2">
             <a
@@ -245,6 +239,40 @@ export default function HomePage() {
                 hiring decisions.
               </p>
             </a>
+          </div>
+        </section>
+
+        <section className="mb-6 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8">
+          <div className="flex flex-col gap-3 border-b border-slate-200 pb-5 sm:flex-row sm:items-end sm:justify-between">
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-500">About Us</p>
+              <h2 className="mt-2 text-2xl font-semibold tracking-tight text-slate-900">
+                Built for hiring decisions that need more signal and less noise
+              </h2>
+            </div>
+          </div>
+          <div className="mt-6 grid gap-6 md:grid-cols-2">
+            <div className="space-y-3 text-sm leading-7 text-slate-600">
+              <p>
+                Mads Hatter operates at the intersection of talent advisory and candidate strategy. The work is shaped
+                by real hiring environments where speed, judgment, and signal matter.
+              </p>
+              <p>
+                The service is designed for two groups: companies building stronger hiring systems and professionals
+                who want sharper positioning, better preparation, and stronger negotiation outcomes.
+              </p>
+            </div>
+            <div className="space-y-3 text-sm leading-7 text-slate-600">
+              <p>
+                Rather than broad coaching or generic consulting, the approach stays focused on practical decisions:
+                role calibration, interview readiness, recruiting structure, and how hiring judgment works in the
+                market.
+              </p>
+              <p>
+                Every engagement is built to improve clarity, tighten execution, and increase confidence on both sides
+                of the hiring process.
+              </p>
+            </div>
           </div>
         </section>
 
