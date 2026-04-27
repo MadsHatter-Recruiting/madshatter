@@ -3,7 +3,7 @@
 import { FormEvent, useMemo, useState } from "react";
 import { isTargetedReview, ReviewResponse } from "@/lib/types";
 
-const LINKEDIN_URL = "https://www.linkedin.com/in/madelinerodz/";
+const LINKEDIN_URL = "https://www.linkedin.com/company/113022676/";
 
 type ApiError = { error?: string };
 

@@ -1,4 +1,4 @@
-const LINKEDIN_URL = "https://www.linkedin.com/in/madelinerodz/";
+const LINKEDIN_URL = "https://www.linkedin.com/company/113022676/";
 
 export default function TemplatePreviewPage() {
   return (

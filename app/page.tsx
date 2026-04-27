@@ -1,6 +1,6 @@
 "use client";
 
-const LINKEDIN_URL = "https://www.linkedin.com/in/madelinerodz/";
+const LINKEDIN_URL = "https://www.linkedin.com/company/113022676/";
 
 const CREDIBILITY_POINTS = [
   "0→1 recruiting systems",
