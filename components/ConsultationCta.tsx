@@ -1,6 +1,16 @@
+"use client";
+
+import { usePathname } from "next/navigation";
+
 const CONSULTATION_URL = "https://calendly.com/madshatter/30min";
 
 export function FloatingConsultationButton() {
+  const pathname = usePathname();
+
+  if (pathname === "/tool") {
+    return null;
+  }
+
   return (
     <a
       href={CONSULTATION_URL}

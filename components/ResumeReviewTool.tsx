@@ -6,6 +6,9 @@ import { isTargetedReview, ReviewResponse } from "@/lib/types";
 const LINKEDIN_URL = "https://www.linkedin.com/company/113022676/";
 
 type ApiError = { error?: string };
+type ResumeReviewToolProps = {
+  standalone?: boolean;
+};
 
 const BulletList = ({ items }: { items: string[] }) => (
   <ul className="space-y-2 text-sm leading-6 text-slate-700">
@@ -18,7 +21,7 @@ const BulletList = ({ items }: { items: string[] }) => (
   </ul>
 );
 
-export default function ResumeReviewTool() {
+export default function ResumeReviewTool({ standalone = false }: ResumeReviewToolProps) {
   const [file, setFile] = useState<File | null>(null);
   const [resumeText, setResumeText] = useState("");
   const [jobDescription, setJobDescription] = useState("");
@@ -67,10 +70,17 @@ export default function ResumeReviewTool() {
   };
 
   return (
-    <section id="review" className="mt-6 rounded-2xl bg-white p-8 shadow-sm ring-1 ring-slate-200 sm:p-10">
-      <h2 className="text-2xl font-semibold tracking-tight text-slate-900">Try the tool</h2>
+    <section
+      id="review"
+      className={`${standalone ? "" : "mt-6"} rounded-2xl bg-white p-8 shadow-sm ring-1 ring-slate-200 sm:p-10`}
+    >
+      <h2 className="text-2xl font-semibold tracking-tight text-slate-900">
+        {standalone ? "Resume Review Tool" : "Try the tool"}
+      </h2>
       <p className="mt-3 text-sm leading-6 text-slate-600">
-        Used by recruiters who have hired thousands of candidates across high-growth technology companies.
+        {standalone
+          ? "Upload a resume or paste text to get structured feedback, rewrite suggestions, and score-based guidance."
+          : "Used by recruiters who have hired thousands of candidates across high-growth technology companies."}
       </p>
       <form onSubmit={onSubmit} className="mt-6 space-y-5">
         <div>
@@ -201,27 +211,29 @@ export default function ResumeReviewTool() {
             </div>
           </div>
 
-          <div className="rounded-xl bg-slate-900 p-6 text-white">
-            <h4 className="text-xl font-semibold">Want me to fix it with you live?</h4>
-            <ul className="mt-4 space-y-2 text-sm text-slate-200">
-              <li>We&apos;ll rewrite your top 5 bullets together</li>
-              <li>We&apos;ll tailor it to your target role</li>
-              <li>You&apos;ll leave with an interview-ready version</li>
-            </ul>
-            <p className="mt-4 text-sm text-slate-200">
-              Use the floating button to book a free consultation and confirm fit.
-            </p>
-            <div className="mt-5 flex flex-wrap gap-3">
-              <a
-                href={LINKEDIN_URL}
-                target="_blank"
-                rel="noreferrer"
-                className="rounded-lg border border-slate-500 px-4 py-2 text-sm font-semibold text-slate-100"
-              >
-                LinkedIn
-              </a>
+          {!standalone ? (
+            <div className="rounded-xl bg-slate-900 p-6 text-white">
+              <h4 className="text-xl font-semibold">Want me to fix it with you live?</h4>
+              <ul className="mt-4 space-y-2 text-sm text-slate-200">
+                <li>We&apos;ll rewrite your top 5 bullets together</li>
+                <li>We&apos;ll tailor it to your target role</li>
+                <li>You&apos;ll leave with an interview-ready version</li>
+              </ul>
+              <p className="mt-4 text-sm text-slate-200">
+                Use the floating button to book a free consultation and confirm fit.
+              </p>
+              <div className="mt-5 flex flex-wrap gap-3">
+                <a
+                  href={LINKEDIN_URL}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="rounded-lg border border-slate-500 px-4 py-2 text-sm font-semibold text-slate-100"
+                >
+                  LinkedIn
+                </a>
+              </div>
             </div>
-          </div>
+          ) : null}
         </div>
       ) : null}
 

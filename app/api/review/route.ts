@@ -111,6 +111,8 @@ const buildSystemPrompt = (mode: ReviewMode) => {
     "Priority rewrites must be sharp and realistic. Do not invent employers, titles, or metrics.",
     "If resume bullets are messy, create representative original snippets grounded in the provided resume text, then rewrite them.",
     "If something is unclear, say so in issues/next_steps instead of guessing.",
+    "When a resume clearly fixes prior weak points such as vague bullets, missing metrics, weak alignment, poor summary quality, or formatting/readability issues, reward that improvement in the score.",
+    "Do not anchor to an assumed prior score band. If the current resume is materially better on the page, the recruiter_score should move up accordingly.",
     "Scoring logic: higher scores require strong title alignment, keyword coverage, clear progression, readable structure, impact-oriented bullets, and credible employer/context signals.",
     "Score calibration: make a 10 extremely rare (near-exceptional, almost no weaknesses), treat 8.5 as very strong, and place most resumes in the 6.0-7.5 range unless evidence is clearly stronger or weaker.",
     "Include score_rationale as one sentence max explaining why the resume earned its recruiter_score.",

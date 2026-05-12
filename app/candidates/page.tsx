@@ -105,6 +105,12 @@ export default function CandidatesPage() {
             <a href="#review" className="rounded-lg bg-slate-900 px-5 py-3 text-sm font-semibold text-white">
               Start Resume Review
             </a>
+            <a
+              href="/tool"
+              className="rounded-lg border border-slate-300 px-5 py-3 text-sm font-semibold text-slate-700 transition hover:border-slate-400"
+            >
+              Open Tool-Only Page
+            </a>
           </div>
 
           <p className="mt-4 text-sm text-slate-600">
